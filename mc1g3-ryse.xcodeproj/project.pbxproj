@@ -7,26 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83B54065243C2AEA00049C41 /* SettingAlarm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B54064243C2AEA00049C41 /* SettingAlarm.storyboard */; };
+		83B54067243C2AF600049C41 /* Challenge.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B54066243C2AF600049C41 /* Challenge.storyboard */; };
+		83B5406E243C2DD700049C41 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 83B5406D243C2DD700049C41 /* Sounds */; };
 		BF405C532436F992004EE3E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF405C522436F992004EE3E2 /* AppDelegate.swift */; };
 		BF405C552436F992004EE3E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF405C542436F992004EE3E2 /* SceneDelegate.swift */; };
-		BF405C572436F992004EE3E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF405C562436F992004EE3E2 /* ViewController.swift */; };
+		BF405C572436F992004EE3E2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF405C562436F992004EE3E2 /* MainViewController.swift */; };
 		BF405C5A2436F992004EE3E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF405C582436F992004EE3E2 /* Main.storyboard */; };
 		BF405C5C2436F993004EE3E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF405C5B2436F993004EE3E2 /* Assets.xcassets */; };
 		BF405C5F2436F993004EE3E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF405C5D2436F993004EE3E2 /* LaunchScreen.storyboard */; };
-		BFC4876024371E1E005BDA5D /* Contoh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC4875F24371E1E005BDA5D /* Contoh.swift */; };
 		CE6A141924372710000F1407 /* SoundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A141824372710000F1407 /* SoundController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		83B54064243C2AEA00049C41 /* SettingAlarm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingAlarm.storyboard; sourceTree = "<group>"; };
+		83B54066243C2AF600049C41 /* Challenge.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Challenge.storyboard; sourceTree = "<group>"; };
+		83B5406D243C2DD700049C41 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Sounds; path = ../../../../Documents/Sounds; sourceTree = "<group>"; };
 		BF405C4F2436F992004EE3E2 /* mc1g3-ryse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mc1g3-ryse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF405C522436F992004EE3E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF405C542436F992004EE3E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BF405C562436F992004EE3E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF405C562436F992004EE3E2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BF405C592436F992004EE3E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF405C5B2436F993004EE3E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF405C5E2436F993004EE3E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF405C602436F993004EE3E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BFC4875F24371E1E005BDA5D /* Contoh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contoh.swift; sourceTree = "<group>"; };
 		CE6A141824372710000F1407 /* SoundController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83B5406C243C2D9700049C41 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE6A141824372710000F1407 /* SoundController.swift */,
+				BF405C562436F992004EE3E2 /* MainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		BF405C462436F992004EE3E2 = {
 			isa = PBXGroup;
 			children = (
@@ -62,13 +75,14 @@
 			children = (
 				BF405C522436F992004EE3E2 /* AppDelegate.swift */,
 				BF405C542436F992004EE3E2 /* SceneDelegate.swift */,
-				BF405C562436F992004EE3E2 /* ViewController.swift */,
+				83B5406C243C2D9700049C41 /* Controllers */,
 				BF405C582436F992004EE3E2 /* Main.storyboard */,
-				BF405C5B2436F993004EE3E2 /* Assets.xcassets */,
+				83B54064243C2AEA00049C41 /* SettingAlarm.storyboard */,
+				83B54066243C2AF600049C41 /* Challenge.storyboard */,
 				BF405C5D2436F993004EE3E2 /* LaunchScreen.storyboard */,
+				BF405C5B2436F993004EE3E2 /* Assets.xcassets */,
 				BF405C602436F993004EE3E2 /* Info.plist */,
-				BFC4875F24371E1E005BDA5D /* Contoh.swift */,
-				CE6A141824372710000F1407 /* SoundController.swift */,
+				83B5406D243C2DD700049C41 /* Sounds */,
 			);
 			path = "mc1g3-ryse";
 			sourceTree = "<group>";
@@ -131,7 +145,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B5406E243C2DD700049C41 /* Sounds in Resources */,
+				83B54067243C2AF600049C41 /* Challenge.storyboard in Resources */,
 				BF405C5F2436F993004EE3E2 /* LaunchScreen.storyboard in Resources */,
+				83B54065243C2AEA00049C41 /* SettingAlarm.storyboard in Resources */,
 				BF405C5C2436F993004EE3E2 /* Assets.xcassets in Resources */,
 				BF405C5A2436F992004EE3E2 /* Main.storyboard in Resources */,
 			);
@@ -144,10 +161,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF405C572436F992004EE3E2 /* ViewController.swift in Sources */,
+				BF405C572436F992004EE3E2 /* MainViewController.swift in Sources */,
 				CE6A141924372710000F1407 /* SoundController.swift in Sources */,
 				BF405C532436F992004EE3E2 /* AppDelegate.swift in Sources */,
-				BFC4876024371E1E005BDA5D /* Contoh.swift in Sources */,
 				BF405C552436F992004EE3E2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
