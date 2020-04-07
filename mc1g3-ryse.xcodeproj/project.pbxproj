@@ -17,6 +17,8 @@
 		BF405C5C2436F993004EE3E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF405C5B2436F993004EE3E2 /* Assets.xcassets */; };
 		BF405C5F2436F993004EE3E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF405C5D2436F993004EE3E2 /* LaunchScreen.storyboard */; };
 		CE6A141924372710000F1407 /* SoundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A141824372710000F1407 /* SoundController.swift */; };
+		CE88D88C243C36FF00F8F19B /* SoundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88D88B243C36FF00F8F19B /* SoundModel.swift */; };
+		CE88D890243C637300F8F19B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE88D88E243C57AF00F8F19B /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		BF405C5E2436F993004EE3E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF405C602436F993004EE3E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE6A141824372710000F1407 /* SoundController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundController.swift; sourceTree = "<group>"; };
+		CE88D88B243C36FF00F8F19B /* SoundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundModel.swift; sourceTree = "<group>"; };
+		CE88D88E243C57AF00F8F19B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE88D890243C637300F8F19B /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +83,12 @@
 		83B54099243C305700049C41 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				83B540A0243C305700049C41 /* BombSiren.mp3 */,
+				83B5409C243C305700049C41 /* Beep.mp3 */,
+				83B5409A243C305700049C41 /* BusySignal.mp3 */,
 				83B540A2243C305700049C41 /* AnalogWatchAlarm.mp3 */,
 				83B540AB243C305800049C41 /* AnnoyingAlarmClock.mp3 */,
-				83B5409C243C305700049C41 /* Beep.mp3 */,
 				83B5409B243C305700049C41 /* Bleep.mp3 */,
-				83B540A0243C305700049C41 /* BombSiren.mp3 */,
-				83B5409A243C305700049C41 /* BusySignal.mp3 */,
 				83B5409F243C305700049C41 /* FirePager.mp3 */,
 				83B5409E243C305700049C41 /* Horn.mp3 */,
 				83B540A4243C305700049C41 /* JapaneseTempleBellSmall.mp3 */,
@@ -108,6 +113,7 @@
 			children = (
 				BF405C512436F992004EE3E2 /* mc1g3-ryse */,
 				BF405C502436F992004EE3E2 /* Products */,
+				CE88D88D243C57AF00F8F19B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +128,7 @@
 		BF405C512436F992004EE3E2 /* mc1g3-ryse */ = {
 			isa = PBXGroup;
 			children = (
+				CE88D88A243C36E100F8F19B /* Model */,
 				BF405C522436F992004EE3E2 /* AppDelegate.swift */,
 				BF405C542436F992004EE3E2 /* SceneDelegate.swift */,
 				83B5406C243C2D9700049C41 /* Controllers */,
@@ -135,6 +142,22 @@
 				83B54099243C305700049C41 /* Sounds */,
 			);
 			path = "mc1g3-ryse";
+			sourceTree = "<group>";
+		};
+		CE88D88A243C36E100F8F19B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE88D88B243C36FF00F8F19B /* SoundModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE88D88D243C57AF00F8F19B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE88D88E243C57AF00F8F19B /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +236,7 @@
 			files = (
 				BF405C572436F992004EE3E2 /* MainViewController.swift in Sources */,
 				CE6A141924372710000F1407 /* SoundController.swift in Sources */,
+				CE88D88C243C36FF00F8F19B /* SoundModel.swift in Sources */,
 				BF405C532436F992004EE3E2 /* AppDelegate.swift in Sources */,
 				BF405C552436F992004EE3E2 /* SceneDelegate.swift in Sources */,
 			);
