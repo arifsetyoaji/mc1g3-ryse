@@ -11,10 +11,8 @@ import UIKit
 
 struct SoundData {
     var fileName: String
-    var selected: Bool = false
     
-    init(fileName: String, selected: Bool) {
+    init(fileName: String) {
         self.fileName = fileName
-        self.selected = selected
     }
 }

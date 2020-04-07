@@ -16,6 +16,27 @@
 		BF405C5A2436F992004EE3E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF405C582436F992004EE3E2 /* Main.storyboard */; };
 		BF405C5C2436F993004EE3E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF405C5B2436F993004EE3E2 /* Assets.xcassets */; };
 		BF405C5F2436F993004EE3E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF405C5D2436F993004EE3E2 /* LaunchScreen.storyboard */; };
+		CE39A864243C6C1A00BEAE74 /* BusySignal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE39A851243C6C1A00BEAE74 /* BusySignal.mp3 */; };
+		CE39A865243C6C1A00BEAE74 /* TempleBellBigger.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE39A852243C6C1A00BEAE74 /* TempleBellBigger.mp3 */; };
+		CE39A866243C6C1A00BEAE74 /* TornadoSiren2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE39A853243C6C1A00BEAE74 /* TornadoSiren2.mp3 */; };
+		CE39A867243C6C1A00BEAE74 /* BombSiren.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE39A854243C6C1A00BEAE74 /* BombSiren.mp3 */; };
+		CE39A868243C6C1A00BEAE74 /* Bleep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE39A855243C6C1A00BEAE74 /* Bleep.mp3 */; };
+		CE39A869243C6C1A00BEAE74 /* Horn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE39A856243C6C1A00BEAE74 /* Horn.mp3 */; };
+		CE39A86A243C6C1A00BEAE74 /* Siren.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE39A857243C6C1A00BEAE74 /* Siren.mp3 */; };
+		CE39A86B243C6C1A00BEAE74 /* OldFashionedOldBell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE39A858243C6C1A00BEAE74 /* OldFashionedOldBell.mp3 */; };
+		CE39A86C243C6C1A00BEAE74 /* Metronome.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE39A859243C6C1A00BEAE74 /* Metronome.mp3 */; };
+		CE39A86D243C6C1A00BEAE74 /* ShipBrassBell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE39A85A243C6C1A00BEAE74 /* ShipBrassBell.mp3 */; };
+		CE39A86E243C6C1A00BEAE74 /* OldFashionedSchoolBell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE39A85B243C6C1A00BEAE74 /* OldFashionedSchoolBell.mp3 */; };
+		CE39A86F243C6C1A00BEAE74 /* LoudAlarmClockBuzzer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE39A85C243C6C1A00BEAE74 /* LoudAlarmClockBuzzer.mp3 */; };
+		CE39A870243C6C1A00BEAE74 /* ZombieDemonSpawn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE39A85D243C6C1A00BEAE74 /* ZombieDemonSpawn.mp3 */; };
+		CE39A871243C6C1A00BEAE74 /* FirePager.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE39A85E243C6C1A00BEAE74 /* FirePager.mp3 */; };
+		CE39A872243C6C1A00BEAE74 /* Rooster.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE39A85F243C6C1A00BEAE74 /* Rooster.mp3 */; };
+		CE39A873243C6C1A00BEAE74 /* JapaneseTempleBellSmall.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE39A860243C6C1A00BEAE74 /* JapaneseTempleBellSmall.mp3 */; };
+		CE39A874243C6C1A00BEAE74 /* MetalMetronome.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE39A861243C6C1A00BEAE74 /* MetalMetronome.mp3 */; };
+		CE39A875243C6C1A00BEAE74 /* StoreDoor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE39A862243C6C1A00BEAE74 /* StoreDoor.mp3 */; };
+		CE39A876243C6C1A00BEAE74 /* AnnoyingAlarmClock.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE39A863243C6C1A00BEAE74 /* AnnoyingAlarmClock.mp3 */; };
+		CE39A878243C6E4700BEAE74 /* AnalogWatchAlarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE39A877243C6E4700BEAE74 /* AnalogWatchAlarm.mp3 */; };
+		CE39A87A243C6E5B00BEAE74 /* Beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE39A879243C6E5B00BEAE74 /* Beep.mp3 */; };
 		CE6A141924372710000F1407 /* SoundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A141824372710000F1407 /* SoundController.swift */; };
 		CE88D88C243C36FF00F8F19B /* SoundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88D88B243C36FF00F8F19B /* SoundModel.swift */; };
 		CE88D890243C637300F8F19B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE88D88E243C57AF00F8F19B /* AVFoundation.framework */; };
@@ -24,27 +45,6 @@
 /* Begin PBXFileReference section */
 		83B54064243C2AEA00049C41 /* SettingAlarm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingAlarm.storyboard; sourceTree = "<group>"; };
 		83B54066243C2AF600049C41 /* Challenge.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Challenge.storyboard; sourceTree = "<group>"; };
-		83B5409A243C305700049C41 /* BusySignal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BusySignal.mp3; sourceTree = "<group>"; };
-		83B5409B243C305700049C41 /* Bleep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bleep.mp3; sourceTree = "<group>"; };
-		83B5409C243C305700049C41 /* Beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Beep.mp3; sourceTree = "<group>"; };
-		83B5409D243C305700049C41 /* TornadoSirenII.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TornadoSirenII.mp3; sourceTree = "<group>"; };
-		83B5409E243C305700049C41 /* Horn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Horn.mp3; sourceTree = "<group>"; };
-		83B5409F243C305700049C41 /* FirePager.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FirePager.mp3; sourceTree = "<group>"; };
-		83B540A0243C305700049C41 /* BombSiren.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BombSiren.mp3; sourceTree = "<group>"; };
-		83B540A1243C305700049C41 /* MetalMetronome.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MetalMetronome.mp3; sourceTree = "<group>"; };
-		83B540A2243C305700049C41 /* AnalogWatchAlarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AnalogWatchAlarm.mp3; sourceTree = "<group>"; };
-		83B540A3243C305700049C41 /* OldFashionedDoorBell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = OldFashionedDoorBell.mp3; sourceTree = "<group>"; };
-		83B540A4243C305700049C41 /* JapaneseTempleBellSmall.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = JapaneseTempleBellSmall.mp3; sourceTree = "<group>"; };
-		83B540A5243C305700049C41 /* Rooster.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rooster.mp3; sourceTree = "<group>"; };
-		83B540A6243C305700049C41 /* Siren.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Siren.mp3; sourceTree = "<group>"; };
-		83B540A7243C305700049C41 /* OldFashionedSchoolBell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = OldFashionedSchoolBell.mp3; sourceTree = "<group>"; };
-		83B540A8243C305700049C41 /* Metronome.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Metronome.mp3; sourceTree = "<group>"; };
-		83B540A9243C305800049C41 /* StoreDoor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = StoreDoor.mp3; sourceTree = "<group>"; };
-		83B540AA243C305800049C41 /* TempleBellBigger.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TempleBellBigger.mp3; sourceTree = "<group>"; };
-		83B540AB243C305800049C41 /* AnnoyingAlarmClock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AnnoyingAlarmClock.mp3; sourceTree = "<group>"; };
-		83B540AC243C305800049C41 /* ZombieDemonSpawn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ZombieDemonSpawn.mp3; sourceTree = "<group>"; };
-		83B540AD243C305800049C41 /* LoudAlarmClockBuzzer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = LoudAlarmClockBuzzer.mp3; sourceTree = "<group>"; };
-		83B540AE243C305800049C41 /* ShipBrassBell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ShipBrassBell.mp3; sourceTree = "<group>"; };
 		83B540AF243C30CF00049C41 /* Sound.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sound.storyboard; sourceTree = "<group>"; };
 		BF405C4F2436F992004EE3E2 /* mc1g3-ryse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mc1g3-ryse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF405C522436F992004EE3E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +54,27 @@
 		BF405C5B2436F993004EE3E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF405C5E2436F993004EE3E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF405C602436F993004EE3E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE39A851243C6C1A00BEAE74 /* BusySignal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BusySignal.mp3; sourceTree = "<group>"; };
+		CE39A852243C6C1A00BEAE74 /* TempleBellBigger.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TempleBellBigger.mp3; sourceTree = "<group>"; };
+		CE39A853243C6C1A00BEAE74 /* TornadoSiren2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TornadoSiren2.mp3; sourceTree = "<group>"; };
+		CE39A854243C6C1A00BEAE74 /* BombSiren.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BombSiren.mp3; sourceTree = "<group>"; };
+		CE39A855243C6C1A00BEAE74 /* Bleep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bleep.mp3; sourceTree = "<group>"; };
+		CE39A856243C6C1A00BEAE74 /* Horn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Horn.mp3; sourceTree = "<group>"; };
+		CE39A857243C6C1A00BEAE74 /* Siren.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Siren.mp3; sourceTree = "<group>"; };
+		CE39A858243C6C1A00BEAE74 /* OldFashionedOldBell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = OldFashionedOldBell.mp3; sourceTree = "<group>"; };
+		CE39A859243C6C1A00BEAE74 /* Metronome.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Metronome.mp3; sourceTree = "<group>"; };
+		CE39A85A243C6C1A00BEAE74 /* ShipBrassBell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ShipBrassBell.mp3; sourceTree = "<group>"; };
+		CE39A85B243C6C1A00BEAE74 /* OldFashionedSchoolBell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = OldFashionedSchoolBell.mp3; sourceTree = "<group>"; };
+		CE39A85C243C6C1A00BEAE74 /* LoudAlarmClockBuzzer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = LoudAlarmClockBuzzer.mp3; sourceTree = "<group>"; };
+		CE39A85D243C6C1A00BEAE74 /* ZombieDemonSpawn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ZombieDemonSpawn.mp3; sourceTree = "<group>"; };
+		CE39A85E243C6C1A00BEAE74 /* FirePager.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FirePager.mp3; sourceTree = "<group>"; };
+		CE39A85F243C6C1A00BEAE74 /* Rooster.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rooster.mp3; sourceTree = "<group>"; };
+		CE39A860243C6C1A00BEAE74 /* JapaneseTempleBellSmall.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = JapaneseTempleBellSmall.mp3; sourceTree = "<group>"; };
+		CE39A861243C6C1A00BEAE74 /* MetalMetronome.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MetalMetronome.mp3; sourceTree = "<group>"; };
+		CE39A862243C6C1A00BEAE74 /* StoreDoor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = StoreDoor.mp3; sourceTree = "<group>"; };
+		CE39A863243C6C1A00BEAE74 /* AnnoyingAlarmClock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AnnoyingAlarmClock.mp3; sourceTree = "<group>"; };
+		CE39A877243C6E4700BEAE74 /* AnalogWatchAlarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AnalogWatchAlarm.mp3; sourceTree = "<group>"; };
+		CE39A879243C6E5B00BEAE74 /* Beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Beep.mp3; sourceTree = "<group>"; };
 		CE6A141824372710000F1407 /* SoundController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundController.swift; sourceTree = "<group>"; };
 		CE88D88B243C36FF00F8F19B /* SoundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundModel.swift; sourceTree = "<group>"; };
 		CE88D88E243C57AF00F8F19B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -78,34 +99,6 @@
 				BF405C562436F992004EE3E2 /* MainViewController.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		83B54099243C305700049C41 /* Sounds */ = {
-			isa = PBXGroup;
-			children = (
-				83B540A0243C305700049C41 /* BombSiren.mp3 */,
-				83B5409C243C305700049C41 /* Beep.mp3 */,
-				83B5409A243C305700049C41 /* BusySignal.mp3 */,
-				83B540A2243C305700049C41 /* AnalogWatchAlarm.mp3 */,
-				83B540AB243C305800049C41 /* AnnoyingAlarmClock.mp3 */,
-				83B5409B243C305700049C41 /* Bleep.mp3 */,
-				83B5409F243C305700049C41 /* FirePager.mp3 */,
-				83B5409E243C305700049C41 /* Horn.mp3 */,
-				83B540A4243C305700049C41 /* JapaneseTempleBellSmall.mp3 */,
-				83B540AD243C305800049C41 /* LoudAlarmClockBuzzer.mp3 */,
-				83B540A1243C305700049C41 /* MetalMetronome.mp3 */,
-				83B540A8243C305700049C41 /* Metronome.mp3 */,
-				83B540A3243C305700049C41 /* OldFashionedDoorBell.mp3 */,
-				83B540A7243C305700049C41 /* OldFashionedSchoolBell.mp3 */,
-				83B540A5243C305700049C41 /* Rooster.mp3 */,
-				83B540AE243C305800049C41 /* ShipBrassBell.mp3 */,
-				83B540A6243C305700049C41 /* Siren.mp3 */,
-				83B540A9243C305800049C41 /* StoreDoor.mp3 */,
-				83B540AA243C305800049C41 /* TempleBellBigger.mp3 */,
-				83B5409D243C305700049C41 /* TornadoSirenII.mp3 */,
-				83B540AC243C305800049C41 /* ZombieDemonSpawn.mp3 */,
-			);
-			path = Sounds;
 			sourceTree = "<group>";
 		};
 		BF405C462436F992004EE3E2 = {
@@ -138,10 +131,38 @@
 				83B54066243C2AF600049C41 /* Challenge.storyboard */,
 				BF405C5D2436F993004EE3E2 /* LaunchScreen.storyboard */,
 				BF405C5B2436F993004EE3E2 /* Assets.xcassets */,
+				CE39A850243C6C1A00BEAE74 /* sound */,
 				BF405C602436F993004EE3E2 /* Info.plist */,
-				83B54099243C305700049C41 /* Sounds */,
 			);
 			path = "mc1g3-ryse";
+			sourceTree = "<group>";
+		};
+		CE39A850243C6C1A00BEAE74 /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				CE39A877243C6E4700BEAE74 /* AnalogWatchAlarm.mp3 */,
+				CE39A863243C6C1A00BEAE74 /* AnnoyingAlarmClock.mp3 */,
+				CE39A879243C6E5B00BEAE74 /* Beep.mp3 */,
+				CE39A855243C6C1A00BEAE74 /* Bleep.mp3 */,
+				CE39A854243C6C1A00BEAE74 /* BombSiren.mp3 */,
+				CE39A851243C6C1A00BEAE74 /* BusySignal.mp3 */,
+				CE39A85E243C6C1A00BEAE74 /* FirePager.mp3 */,
+				CE39A856243C6C1A00BEAE74 /* Horn.mp3 */,
+				CE39A860243C6C1A00BEAE74 /* JapaneseTempleBellSmall.mp3 */,
+				CE39A85C243C6C1A00BEAE74 /* LoudAlarmClockBuzzer.mp3 */,
+				CE39A861243C6C1A00BEAE74 /* MetalMetronome.mp3 */,
+				CE39A859243C6C1A00BEAE74 /* Metronome.mp3 */,
+				CE39A858243C6C1A00BEAE74 /* OldFashionedOldBell.mp3 */,
+				CE39A85B243C6C1A00BEAE74 /* OldFashionedSchoolBell.mp3 */,
+				CE39A85F243C6C1A00BEAE74 /* Rooster.mp3 */,
+				CE39A85A243C6C1A00BEAE74 /* ShipBrassBell.mp3 */,
+				CE39A857243C6C1A00BEAE74 /* Siren.mp3 */,
+				CE39A862243C6C1A00BEAE74 /* StoreDoor.mp3 */,
+				CE39A852243C6C1A00BEAE74 /* TempleBellBigger.mp3 */,
+				CE39A853243C6C1A00BEAE74 /* TornadoSiren2.mp3 */,
+				CE39A85D243C6C1A00BEAE74 /* ZombieDemonSpawn.mp3 */,
+			);
+			path = sound;
 			sourceTree = "<group>";
 		};
 		CE88D88A243C36E100F8F19B /* Model */ = {
@@ -218,10 +239,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE39A871243C6C1A00BEAE74 /* FirePager.mp3 in Resources */,
+				CE39A865243C6C1A00BEAE74 /* TempleBellBigger.mp3 in Resources */,
+				CE39A868243C6C1A00BEAE74 /* Bleep.mp3 in Resources */,
+				CE39A866243C6C1A00BEAE74 /* TornadoSiren2.mp3 in Resources */,
+				CE39A878243C6E4700BEAE74 /* AnalogWatchAlarm.mp3 in Resources */,
+				CE39A867243C6C1A00BEAE74 /* BombSiren.mp3 in Resources */,
+				CE39A873243C6C1A00BEAE74 /* JapaneseTempleBellSmall.mp3 in Resources */,
 				83B54067243C2AF600049C41 /* Challenge.storyboard in Resources */,
+				CE39A86F243C6C1A00BEAE74 /* LoudAlarmClockBuzzer.mp3 in Resources */,
+				CE39A864243C6C1A00BEAE74 /* BusySignal.mp3 in Resources */,
+				CE39A86C243C6C1A00BEAE74 /* Metronome.mp3 in Resources */,
+				CE39A870243C6C1A00BEAE74 /* ZombieDemonSpawn.mp3 in Resources */,
+				CE39A872243C6C1A00BEAE74 /* Rooster.mp3 in Resources */,
+				CE39A875243C6C1A00BEAE74 /* StoreDoor.mp3 in Resources */,
 				BF405C5F2436F993004EE3E2 /* LaunchScreen.storyboard in Resources */,
+				CE39A86A243C6C1A00BEAE74 /* Siren.mp3 in Resources */,
 				83B54065243C2AEA00049C41 /* SettingAlarm.storyboard in Resources */,
+				CE39A874243C6C1A00BEAE74 /* MetalMetronome.mp3 in Resources */,
+				CE39A87A243C6E5B00BEAE74 /* Beep.mp3 in Resources */,
+				CE39A876243C6C1A00BEAE74 /* AnnoyingAlarmClock.mp3 in Resources */,
 				BF405C5C2436F993004EE3E2 /* Assets.xcassets in Resources */,
+				CE39A869243C6C1A00BEAE74 /* Horn.mp3 in Resources */,
+				CE39A86B243C6C1A00BEAE74 /* OldFashionedOldBell.mp3 in Resources */,
+				CE39A86E243C6C1A00BEAE74 /* OldFashionedSchoolBell.mp3 in Resources */,
+				CE39A86D243C6C1A00BEAE74 /* ShipBrassBell.mp3 in Resources */,
 				BF405C5A2436F992004EE3E2 /* Main.storyboard in Resources */,
 				83B540B0243C30CF00049C41 /* Sound.storyboard in Resources */,
 			);

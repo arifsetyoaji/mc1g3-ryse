@@ -13,15 +13,30 @@ class SoundController: UITableViewController {
     
     var selectedIndexPath: IndexPath? = IndexPath(row: 0, section: 0)
     
-    var audioPlayer: AVAudioPlayer!
+    var audioPlayer: AVAudioPlayer?
     
     var soundList = [
-        SoundData(fileName: "AnalogWatchAlarm", selected: true),
-        SoundData(fileName: "AnnoyingAlarmClock", selected: false),
-        SoundData(fileName: "Beep", selected: false),
-        SoundData(fileName: "Horn", selected: false),
-        SoundData(fileName: "Metronome", selected: false),
-        SoundData(fileName: "Siren", selected: false),
+        SoundData(fileName: "Analog Watch Alarm"),
+        SoundData(fileName: "Annoying Alarm Clock"),
+        SoundData(fileName: "Beep"),
+        SoundData(fileName: "Horn"),
+        SoundData(fileName: "Metronome"),
+        SoundData(fileName: "Metal Metronome"),
+        SoundData(fileName: "Siren"),
+        SoundData(fileName: "Busy Signal"),
+        SoundData(fileName: "Bleep"),
+        SoundData(fileName: "Bomb Siren"),
+        SoundData(fileName: "Fire Pager"),
+        SoundData(fileName: "Japanese Temple Bell Small"),
+        SoundData(fileName: "Loud Alarm Clock Buzzer"),
+        SoundData(fileName: "Old Fashioned Old Bell"),
+        SoundData(fileName: "Old Fashioned School Bell"),
+        SoundData(fileName: "Rooster"),
+        SoundData(fileName: "Ship Brass Bell"),
+        SoundData(fileName: "Store Door"),
+        SoundData(fileName: "Temple Bell Bigger"),
+        SoundData(fileName: "Tornado Siren 2"),
+        SoundData(fileName: "Zombie Demon Spawn"),
     ]
     
     override func viewDidLoad() {
@@ -44,7 +59,11 @@ class SoundController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "soundCollection", for: indexPath)
         
+        //Sorting array
+        soundList = soundList.sorted(by: { $0.fileName < $1.fileName })
+        
         let list = soundList[indexPath.row]
+        
         cell.textLabel?.text = list.fileName
         
         if indexPath == selectedIndexPath {
@@ -58,9 +77,11 @@ class SoundController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        soundList[indexPath.row].selected = !soundList[indexPath.row].selected
+        let file = soundList[indexPath.row].fileName
         
-        playSound(sound: soundList[indexPath.row].fileName)
+        let soundName = file.replacingOccurrences(of: " ", with: "", options: .literal, range: nil)
+        
+        playSound(sound: soundName + ".mp3")
         
         selectedIndexPath = indexPath
         
@@ -68,10 +89,9 @@ class SoundController: UITableViewController {
         
     }
     
+    
     override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        if let cell = tableView.cellForRow(at: indexPath){
-            cell.accessoryType = .none
-        }
+       
     }
     
     @IBAction func cancelButton(_ sender: Any) {
@@ -83,13 +103,17 @@ class SoundController: UITableViewController {
     }
     
     func playSound(sound: String) {
-        let soundPath = Bundle.main.url(forResource: sound, withExtension: "mp3")
         
-        print(soundPath)
-        audioPlayer = try! AVAudioPlayer(contentsOf: soundPath!)
-        audioPlayer?.play()
+//       let soundPath = Bundle.main.url(forResource: sound, withExtension: "mp3")
+    let soundPath = Bundle.main.path(forResource: sound, ofType:nil)!
+    let url = URL(fileURLWithPath: soundPath)
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer?.play()
+        } catch {
+            print("Error gk ada data.")
+        }
     }
-    
     
     
     
