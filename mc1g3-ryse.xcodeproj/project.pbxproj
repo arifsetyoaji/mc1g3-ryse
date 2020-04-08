@@ -10,6 +10,14 @@
 		83B54065243C2AEA00049C41 /* SettingAlarm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B54064243C2AEA00049C41 /* SettingAlarm.storyboard */; };
 		83B54067243C2AF600049C41 /* Challenge.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B54066243C2AF600049C41 /* Challenge.storyboard */; };
 		83B540B0243C30CF00049C41 /* Sound.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B540AF243C30CF00049C41 /* Sound.storyboard */; };
+		83B5413C243DBDF200049C41 /* AddAlarm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B5413B243DBDF200049C41 /* AddAlarm.storyboard */; };
+		83B5413E243DC2CE00049C41 /* AlarmLabel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B5413D243DC2CE00049C41 /* AlarmLabel.storyboard */; };
+		83B54140243DC44D00049C41 /* AddAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5413F243DC44D00049C41 /* AddAlarmViewController.swift */; };
+		83B54142243DC98200049C41 /* RepeatDay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B54141243DC98200049C41 /* RepeatDay.storyboard */; };
+		83B54146243DCEBB00049C41 /* RepeatDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B54145243DCEBB00049C41 /* RepeatDayViewController.swift */; };
+		83B54148243DD1D500049C41 /* AlarmLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B54147243DD1D500049C41 /* AlarmLabelViewController.swift */; };
+		83B5414A243DD4D600049C41 /* AlarmViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B54149243DD4D600049C41 /* AlarmViewCell.swift */; };
+		83B5414E243DD67900049C41 /* SettingAlarmTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5414D243DD67900049C41 /* SettingAlarmTableViewController.swift */; };
 		BF405C532436F992004EE3E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF405C522436F992004EE3E2 /* AppDelegate.swift */; };
 		BF405C552436F992004EE3E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF405C542436F992004EE3E2 /* SceneDelegate.swift */; };
 		BF405C572436F992004EE3E2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF405C562436F992004EE3E2 /* MainViewController.swift */; };
@@ -64,6 +72,14 @@
 		83B54064243C2AEA00049C41 /* SettingAlarm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingAlarm.storyboard; sourceTree = "<group>"; };
 		83B54066243C2AF600049C41 /* Challenge.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Challenge.storyboard; sourceTree = "<group>"; };
 		83B540AF243C30CF00049C41 /* Sound.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sound.storyboard; sourceTree = "<group>"; };
+		83B5413B243DBDF200049C41 /* AddAlarm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddAlarm.storyboard; sourceTree = "<group>"; };
+		83B5413D243DC2CE00049C41 /* AlarmLabel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlarmLabel.storyboard; sourceTree = "<group>"; };
+		83B5413F243DC44D00049C41 /* AddAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlarmViewController.swift; sourceTree = "<group>"; };
+		83B54141243DC98200049C41 /* RepeatDay.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RepeatDay.storyboard; sourceTree = "<group>"; };
+		83B54145243DCEBB00049C41 /* RepeatDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatDayViewController.swift; sourceTree = "<group>"; };
+		83B54147243DD1D500049C41 /* AlarmLabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmLabelViewController.swift; sourceTree = "<group>"; };
+		83B54149243DD4D600049C41 /* AlarmViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewCell.swift; sourceTree = "<group>"; };
+		83B5414D243DD67900049C41 /* SettingAlarmTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingAlarmTableViewController.swift; sourceTree = "<group>"; };
 		BF405C4F2436F992004EE3E2 /* mc1g3-ryse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mc1g3-ryse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF405C522436F992004EE3E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF405C542436F992004EE3E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,8 +147,13 @@
 		83B5406C243C2D9700049C41 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				CE6A141824372710000F1407 /* SoundController.swift */,
 				BF405C562436F992004EE3E2 /* MainViewController.swift */,
+				83B5414D243DD67900049C41 /* SettingAlarmTableViewController.swift */,
+				83B5413F243DC44D00049C41 /* AddAlarmViewController.swift */,
+				83B54149243DD4D600049C41 /* AlarmViewCell.swift */,
+				83B54145243DCEBB00049C41 /* RepeatDayViewController.swift */,
+				83B54147243DD1D500049C41 /* AlarmLabelViewController.swift */,
+				CE6A141824372710000F1407 /* SoundController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -162,8 +183,11 @@
 				BF405C542436F992004EE3E2 /* SceneDelegate.swift */,
 				83B5406C243C2D9700049C41 /* Controllers */,
 				BF405C582436F992004EE3E2 /* Main.storyboard */,
-				83B540AF243C30CF00049C41 /* Sound.storyboard */,
 				83B54064243C2AEA00049C41 /* SettingAlarm.storyboard */,
+				83B5413B243DBDF200049C41 /* AddAlarm.storyboard */,
+				83B54141243DC98200049C41 /* RepeatDay.storyboard */,
+				83B5413D243DC2CE00049C41 /* AlarmLabel.storyboard */,
+				83B540AF243C30CF00049C41 /* Sound.storyboard */,
 				83B54066243C2AF600049C41 /* Challenge.storyboard */,
 				BF405C5D2436F993004EE3E2 /* LaunchScreen.storyboard */,
 				BF405C5B2436F993004EE3E2 /* Assets.xcassets */,
@@ -306,6 +330,7 @@
 				CE39A868243C6C1A00BEAE74 /* Bleep.mp3 in Resources */,
 				CE39A866243C6C1A00BEAE74 /* TornadoSiren2.mp3 in Resources */,
 				CE1DC30A243DC4E800F21457 /* SF-Pro-Text-Medium.otf in Resources */,
+				83B5413C243DBDF200049C41 /* AddAlarm.storyboard in Resources */,
 				CE39A878243C6E4700BEAE74 /* AnalogWatchAlarm.mp3 in Resources */,
 				CE39A867243C6C1A00BEAE74 /* BombSiren.mp3 in Resources */,
 				CE1DC312243DC4E800F21457 /* SF-Pro-Text-Heavy.otf in Resources */,
@@ -322,6 +347,7 @@
 				CE39A86F243C6C1A00BEAE74 /* LoudAlarmClockBuzzer.mp3 in Resources */,
 				CE39A864243C6C1A00BEAE74 /* BusySignal.mp3 in Resources */,
 				CE39A86C243C6C1A00BEAE74 /* Metronome.mp3 in Resources */,
+				83B5413E243DC2CE00049C41 /* AlarmLabel.storyboard in Resources */,
 				CE39A870243C6C1A00BEAE74 /* ZombieDemonSpawn.mp3 in Resources */,
 				CE39A872243C6C1A00BEAE74 /* Rooster.mp3 in Resources */,
 				CE1DC309243DC4E800F21457 /* SF-Pro-Text-ThinItalic.otf in Resources */,
@@ -340,6 +366,7 @@
 				CE1DC30D243DC4E800F21457 /* SF-Pro-Text-Thin.otf in Resources */,
 				BF405C5C2436F993004EE3E2 /* Assets.xcassets in Resources */,
 				CE39A869243C6C1A00BEAE74 /* Horn.mp3 in Resources */,
+				83B54142243DC98200049C41 /* RepeatDay.storyboard in Resources */,
 				CE39A86B243C6C1A00BEAE74 /* OldFashionedOldBell.mp3 in Resources */,
 				CE39A86E243C6C1A00BEAE74 /* OldFashionedSchoolBell.mp3 in Resources */,
 				CE39A86D243C6C1A00BEAE74 /* ShipBrassBell.mp3 in Resources */,
@@ -356,11 +383,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B54140243DC44D00049C41 /* AddAlarmViewController.swift in Sources */,
 				BF405C572436F992004EE3E2 /* MainViewController.swift in Sources */,
+				83B5414E243DD67900049C41 /* SettingAlarmTableViewController.swift in Sources */,
 				CE6A141924372710000F1407 /* SoundController.swift in Sources */,
+				83B54148243DD1D500049C41 /* AlarmLabelViewController.swift in Sources */,
 				CE88D88C243C36FF00F8F19B /* SoundModel.swift in Sources */,
+				83B5414A243DD4D600049C41 /* AlarmViewCell.swift in Sources */,
 				BF405C532436F992004EE3E2 /* AppDelegate.swift in Sources */,
 				BF405C552436F992004EE3E2 /* SceneDelegate.swift in Sources */,
+				83B54146243DCEBB00049C41 /* RepeatDayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

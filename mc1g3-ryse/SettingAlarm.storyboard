@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eMB-gi-Yp3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Setting Alarm-->
         <scene sceneID="FiZ-Wo-5Z4">
             <objects>
-                <tableViewController id="eMB-gi-Yp3" sceneMemberID="viewController">
+                <tableViewController id="eMB-gi-Yp3" customClass="SettingAlarmTableViewController" customModule="mc1g3_ryse" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="smk-uI-UGT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="103" id="f4e-Nd-pGG">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="alarmCell" rowHeight="103" id="f4e-Nd-pGG" customClass="AlarmViewCell" customModule="mc1g3_ryse" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="103"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f4e-Nd-pGG" id="7eO-hO-rUU">
@@ -23,21 +23,21 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOb-Rb-hD2">
-                                            <rect key="frame" x="33" y="6" width="107" height="42"/>
+                                            <rect key="frame" x="33" y="6" width="195" height="42"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bit-50-82z">
-                                            <rect key="frame" x="33" y="51" width="42" height="21"/>
+                                            <rect key="frame" x="33" y="51" width="288" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KS9-AC-tgf">
-                                            <rect key="frame" x="33" y="75" width="42" height="21"/>
+                                            <rect key="frame" x="33" y="75" width="288" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -46,9 +46,18 @@
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UXB-WH-imN">
                                             <rect key="frame" x="329" y="36" width="49" height="31"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="onTintColor" red="0.93725490199999995" green="0.59999999999999998" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="alarmSwitch:" destination="f4e-Nd-pGG" eventType="valueChanged" id="CtK-Ss-HfQ"/>
+                                            </connections>
                                         </switch>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="alarmDay" destination="Bit-50-82z" id="Lej-Wd-3DJ"/>
+                                    <outlet property="alarmLabel" destination="KS9-AC-tgf" id="4CN-3v-fig"/>
+                                    <outlet property="alarmTime" destination="hOb-Rb-hD2" id="518-xv-fkY"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -56,29 +65,26 @@
                             <outlet property="delegate" destination="eMB-gi-Yp3" id="KGE-wF-sjM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="v8d-gP-3N1"/>
+                    <navigationItem key="navigationItem" title="Setting Alarm" id="v8d-gP-3N1">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="1jh-iP-quj">
+                            <connections>
+                                <segue destination="dYl-IR-yVt" kind="presentation" id="3lP-n5-YLW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RIV-6J-k1z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2465.217391304348" y="145.98214285714286"/>
+            <point key="canvasLocation" x="3375.36231884058" y="145.98214285714286"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="DJa-OK-PeK">
+        <!--AddAlarm-->
+        <scene sceneID="eb5-xO-lwg">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DKH-fz-BfC" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ksg-8m-AxT">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="eMB-gi-Yp3" kind="relationship" relationship="rootViewController" id="gkI-54-vhs"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5tg-J1-xlZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="AddAlarm" id="dYl-IR-yVt" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rTT-We-ZKV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1555.072463768116" y="145.98214285714286"/>
+            <point key="canvasLocation" x="3918.8405797101454" y="-96.428571428571431"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.93725490199999995" green="0.59999999999999998" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
