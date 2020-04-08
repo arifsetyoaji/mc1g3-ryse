@@ -13,7 +13,7 @@ class SoundController: UITableViewController {
     
     var selectedIndexPath: IndexPath? = IndexPath(row: 0, section: 0)
     
-    var audioPlayer: AVAudioPlayer?
+    var audioPlayer: AVAudioPlayer!
     
     var soundList = [
         SoundData(fileName: "Analog Watch Alarm"),
@@ -92,14 +92,6 @@ class SoundController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
        
-    }
-    
-    @IBAction func cancelButton(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
-    @IBAction func saveButton(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
     }
     
     func playSound(sound: String) {

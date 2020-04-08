@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lfG-fJ-Bho">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
@@ -30,9 +30,6 @@
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="ARe-U0-7kF" kind="show" id="tAP-w2-PU9"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tidak bisa main hanabi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qq-T6-90q">
                                 <rect key="frame" x="189" y="191" width="175" height="21"/>
@@ -52,25 +49,49 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="l5d-kH-uGp">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="fastForward" id="Ua9-Ul-uS2">
+                            <connections>
+                                <segue destination="ARe-U0-7kF" kind="push" id="GsR-Ym-nef"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="btnSubmit" destination="XmZ-ul-yt0" id="7Nl-ib-oSW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1023" y="-591"/>
+            <point key="canvasLocation" x="-113.04347826086958" y="-591.29464285714278"/>
         </scene>
-        <!--Sound-->
+        <!--SettingAlarm-->
         <scene sceneID="rxn-bA-wT7">
             <objects>
-                <viewControllerPlaceholder storyboardName="Sound" id="ARe-U0-7kF" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="SettingAlarm" id="ARe-U0-7kF" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="MvP-Hb-x0I"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eSo-ew-pkc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-
-            <point key="canvasLocation" x="-333.33333333333337" y="-591.29464285714278"/>
-
+            <point key="canvasLocation" x="497" y="-849"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="piR-9c-5hl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lfG-fJ-Bho" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jCZ-Bo-U21">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.93725490199999995" green="0.59999999999999998" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dat-L0-zhG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YfY-lf-RjC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1023.1884057971015" y="-591.29464285714278"/>
         </scene>
     </scenes>
 </document>
