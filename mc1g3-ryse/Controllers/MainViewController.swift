@@ -9,20 +9,16 @@
 import UIKit
 
 class MainViewController: UIViewController {
-
-    @IBOutlet weak var btnSubmit: UIButton!
+    
+    @IBOutlet weak var settingsLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        //hohohoho
-        //tes ngepush - Griffin
-        //test push grace
+        let size:CGFloat = 44.5 // 35.0 chosen arbitrarily
         
-        
-        //asdf
-        //test tambahin lagi
+        settingsLabel.layer.cornerRadius = size / 2
     }
 
 
