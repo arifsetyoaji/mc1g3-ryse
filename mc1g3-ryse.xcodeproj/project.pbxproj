@@ -18,6 +18,7 @@
 		83B54148243DD1D500049C41 /* AlarmLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B54147243DD1D500049C41 /* AlarmLabelViewController.swift */; };
 		83B5414A243DD4D600049C41 /* AlarmViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B54149243DD4D600049C41 /* AlarmViewCell.swift */; };
 		83B5414E243DD67900049C41 /* SettingAlarmTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5414D243DD67900049C41 /* SettingAlarmTableViewController.swift */; };
+		ABEE0CB2243F600D00415D66 /* AlarmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEE0CB1243F600D00415D66 /* AlarmModel.swift */; };
 		BF405C532436F992004EE3E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF405C522436F992004EE3E2 /* AppDelegate.swift */; };
 		BF405C552436F992004EE3E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF405C542436F992004EE3E2 /* SceneDelegate.swift */; };
 		BF405C572436F992004EE3E2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF405C562436F992004EE3E2 /* MainViewController.swift */; };
@@ -62,6 +63,7 @@
 		83B54147243DD1D500049C41 /* AlarmLabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmLabelViewController.swift; sourceTree = "<group>"; };
 		83B54149243DD4D600049C41 /* AlarmViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewCell.swift; sourceTree = "<group>"; };
 		83B5414D243DD67900049C41 /* SettingAlarmTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingAlarmTableViewController.swift; sourceTree = "<group>"; };
+		ABEE0CB1243F600D00415D66 /* AlarmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmModel.swift; sourceTree = "<group>"; };
 		BF405C4F2436F992004EE3E2 /* mc1g3-ryse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mc1g3-ryse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF405C522436F992004EE3E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF405C542436F992004EE3E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				CE88D88B243C36FF00F8F19B /* SoundModel.swift */,
+				ABEE0CB1243F600D00415D66 /* AlarmModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				BF405C532436F992004EE3E2 /* AppDelegate.swift in Sources */,
 				BF405C552436F992004EE3E2 /* SceneDelegate.swift in Sources */,
 				83B54146243DCEBB00049C41 /* RepeatDayViewController.swift in Sources */,
+				ABEE0CB2243F600D00415D66 /* AlarmModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

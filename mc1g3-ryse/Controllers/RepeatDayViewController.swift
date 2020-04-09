@@ -60,9 +60,6 @@ class RepeatDayViewController: UIViewController, UITableViewDataSource, UITableV
         days[indexPath.row].selected = !days[indexPath.row].selected
         
         if days[indexPath.row].selected {
-            
-            
-            
             if !repeatDay.contains(indexPath.row){
                 repeatDay.append(indexPath.row)
             }
@@ -71,7 +68,6 @@ class RepeatDayViewController: UIViewController, UITableViewDataSource, UITableV
             }
             
         } else {
-            
             if repeatDay.count != 0 {
 //                repeatDay.remove(at: indexPath.row)
                 repeatDay = repeatDay.filter{$0 != indexPath.row}
@@ -80,6 +76,7 @@ class RepeatDayViewController: UIViewController, UITableViewDataSource, UITableV
         }
         
         print(repeatDay)
+        
         
         tableView.reloadData()
         

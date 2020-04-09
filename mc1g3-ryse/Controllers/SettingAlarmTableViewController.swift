@@ -11,17 +11,22 @@ import UIKit
 class SettingAlarmTableViewController: UITableViewController {
     
     
-    struct Alarm {
-        var time: String
-        var repeatday: String
-        var label: String
-    }
-    
+//    struct Alarm {
+//        var time: String
+//        var repeatday: String
+//        var label: String
+//    }
+//
+//
+//    var alarms = [
+//        Alarm(time: "06.00 AM", repeatday: "Sun, Mon, Tues", label: "Wake Me Up, when Sept .."),
+//        Alarm(time: "06.05 AM", repeatday: "Sun, Mon, Tues", label: "Wake Up !!!"),
+//        Alarm(time: "06.10 AM", repeatday: "Sun, Mon, Tues", label: "Please Wake Me Up"),
+//    ]
     
     var alarms = [
-        Alarm(time: "06.00 AM", repeatday: "Sun, Mon, Tues", label: "Wake Me Up, when Sept .."),
-        Alarm(time: "06.05 AM", repeatday: "Sun, Mon, Tues", label: "Wake Up !!!"),
-        Alarm(time: "06.10 AM", repeatday: "Sun, Mon, Tues", label: "Please Wake Me Up"),
+        DataAlarm(time: Date(), repeatDay: [.sunday, .monday, .friday], label: "ini alarm saya", sound: "Horn", ascending: true),
+        DataAlarm(time: Date(), repeatDay: [.thursday, .saturday], label: "test", sound: "Horn", ascending: true)
     ]
     
 
@@ -55,9 +60,18 @@ class SettingAlarmTableViewController: UITableViewController {
         }
         
         let alarmItem = alarms[indexPath.row]
-            
-        cell.alarmTime.text = alarmItem.time
-        cell.alarmDay.text = alarmItem.repeatday
+        var timeformat = DateFormatter()
+        var repeatdays: String = ""
+        
+        timeformat.dateFormat = "HH.mm"
+        
+        for x in alarmItem.repeatDay {
+            repeatdays.append(x.rawValue)
+            repeatdays.append(", ")
+        }
+        
+        cell.alarmTime.text = timeformat.string(from: Date())
+        cell.alarmDay.text = String(repeatdays.prefix(repeatdays.count - 2))
         cell.alarmLabel.text = alarmItem.label
         
         tableView.rowHeight = 110
