@@ -144,9 +144,9 @@
 		BF405C512436F992004EE3E2 /* mc1g3-ryse */ = {
 			isa = PBXGroup;
 			children = (
-				CE88D88A243C36E100F8F19B /* Model */,
 				BF405C522436F992004EE3E2 /* AppDelegate.swift */,
 				BF405C542436F992004EE3E2 /* SceneDelegate.swift */,
+				CE88D88A243C36E100F8F19B /* Models */,
 				83B5406C243C2D9700049C41 /* Controllers */,
 				BF405C582436F992004EE3E2 /* Main.storyboard */,
 				83B54064243C2AEA00049C41 /* SettingAlarm.storyboard */,
@@ -155,8 +155,8 @@
 				83B5413D243DC2CE00049C41 /* AlarmLabel.storyboard */,
 				83B540AF243C30CF00049C41 /* Sound.storyboard */,
 				83B54066243C2AF600049C41 /* Challenge.storyboard */,
-				BF405C5D2436F993004EE3E2 /* LaunchScreen.storyboard */,
 				BF405C5B2436F993004EE3E2 /* Assets.xcassets */,
+				BF405C5D2436F993004EE3E2 /* LaunchScreen.storyboard */,
 				CE39A850243C6C1A00BEAE74 /* sound */,
 				BF405C602436F993004EE3E2 /* Info.plist */,
 			);
@@ -191,13 +191,13 @@
 			path = sound;
 			sourceTree = "<group>";
 		};
-		CE88D88A243C36E100F8F19B /* Model */ = {
+		CE88D88A243C36E100F8F19B /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				CE88D88B243C36FF00F8F19B /* SoundModel.swift */,
 				ABEE0CB1243F600D00415D66 /* AlarmModel.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		CE88D88D243C57AF00F8F19B /* Frameworks */ = {

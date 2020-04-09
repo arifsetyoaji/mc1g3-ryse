@@ -135,15 +135,26 @@
                         <viewLayoutGuide key="safeArea" id="HqN-n8-SEX"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add Alarm" id="I39-sA-cB4">
-                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="VZS-OE-4d6"/>
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="ukp-3Z-ayP"/>
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="VZS-OE-4d6">
+                            <connections>
+                                <action selector="cancelButtonPressed:" destination="tPd-BB-kEl" id="VcN-Mm-Uu2"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="ukp-3Z-ayP">
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="tPd-BB-kEl" id="wXH-qS-IBY"/>
+                                <segue destination="i6o-8O-Cfv" kind="unwind" unwindAction="unwindAddAlarmWithSender:" id="wdO-r3-Ohf"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="saveButton" destination="I39-sA-cB4" id="Es1-GB-Kl9"/>
                         <outlet property="settingAlarmTableView" destination="Rli-Xl-Wdi" id="z97-eX-gJC"/>
                         <outlet property="timePicker" destination="IiL-s7-0ao" id="AFs-ze-BeY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ReX-QV-Dg4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="i6o-8O-Cfv" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2449" y="94"/>
         </scene>

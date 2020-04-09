@@ -9,22 +9,28 @@
 import UIKit
 
 class AddAlarmViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIPickerViewDelegate {
-
+    
+    @IBOutlet weak var cancelButton: UIBarButtonItem!
+    @IBOutlet weak var saveButton: UINavigationItem!
     
     @IBOutlet weak var timePicker: UIDatePicker!
-    
     @IBOutlet weak var settingAlarmTableView: UITableView!
+    
+    var alarmTimePicked = Date()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.timePicker.datePickerMode = .time
-//        timePicker.delegate =
-        
-        self.settingAlarmTableView.delegate = self
-        self.settingAlarmTableView.dataSource = self
+        timePicking()
 
         // Do any additional setup after loading the view.
+    }
+    
+    func timePicking() {
+        self.timePicker.datePickerMode = .time
+
+        self.settingAlarmTableView.delegate = self
+        self.settingAlarmTableView.dataSource = self
     }
     
     
@@ -60,15 +66,26 @@ class AddAlarmViewController: UIViewController, UITableViewDataSource, UITableVi
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        
+        if segue.destination is SettingAlarmTableViewController {
+            
+            //toPresent.alarmTime = timePicker.date
+            print("prepare to present \(timePicker.date)")
+        }
+        
     }
-    */
+    
+    @IBAction func saveButtonPressed(_ sender: UIStoryboardSegue) {
+        dismiss(animated: true, completion: nil)
+        print(alarmTimePicked)
+    }
+    
+    
+    @IBAction func cancelButtonPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 
 }

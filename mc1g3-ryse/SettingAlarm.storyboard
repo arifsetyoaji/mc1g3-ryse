@@ -83,7 +83,7 @@
                 <viewControllerPlaceholder storyboardName="AddAlarm" id="dYl-IR-yVt" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rTT-We-ZKV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3918.8405797101454" y="-96.428571428571431"/>
+            <point key="canvasLocation" x="3200" y="-57"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.93725490199999995" green="0.59999999999999998" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

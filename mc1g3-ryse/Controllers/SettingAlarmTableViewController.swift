@@ -24,6 +24,10 @@ class SettingAlarmTableViewController: UITableViewController {
 //        Alarm(time: "06.10 AM", repeatday: "Sun, Mon, Tues", label: "Please Wake Me Up"),
 //    ]
     
+    var alarmTime: String = ""
+    
+    var alarmArray: [String] = []
+    
     var alarms = [
         DataAlarm(time: Date(), repeatDay: [.sunday, .monday, .friday], label: "ini alarm saya", sound: "Horn", ascending: true),
         DataAlarm(time: Date(), repeatDay: [.thursday, .saturday], label: "test", sound: "Horn", ascending: true)
@@ -38,8 +42,34 @@ class SettingAlarmTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
     }
 
+    @IBAction func unwindAddAlarm(sender: UIStoryboardSegue){
+        
+        if let present = sender.source as? AddAlarmViewController {
+
+            let timePicked = present.timePicker.date
+            let timeformat = DateFormatter()
+            timeformat.dateFormat = "HH.mm"
+            
+            alarmTime = timeformat.string(from: timePicked)
+            
+            alarmArray.append(alarmTime)
+            print("append alarm array \(alarmTime)")
+        }
+        
+        saveAlarm()
+        
+    }
+    
+    func saveAlarm(){
+        self.tableView.reloadData()
+        print(alarmArray)
+    }
+    
+    
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -49,7 +79,7 @@ class SettingAlarmTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return alarms.count
+        return alarmArray.count //alarms.count
     }
 
     
@@ -59,22 +89,24 @@ class SettingAlarmTableViewController: UITableViewController {
             fatalError("The dequeued cell is not an instance of SummaryTableViewCell.")
         }
         
-        let alarmItem = alarms[indexPath.row]
-        var timeformat = DateFormatter()
-        var repeatdays: String = ""
+        let alarmItem = alarmArray[indexPath.row] //alarms[indexPath.row]
+//        let timeformat = DateFormatter()
+//        var repeatdays: String = ""
         
-        timeformat.dateFormat = "HH.mm"
+//        timeformat.dateFormat = "HH.mm"
         
-        for x in alarmItem.repeatDay {
-            repeatdays.append(x.rawValue)
-            repeatdays.append(", ")
-        }
+//        for x in alarmItem.repeatDay {
+//            repeatdays.append(x.rawValue)
+//            repeatdays.append(", ")
+//        }
         
-        cell.alarmTime.text = timeformat.string(from: Date())
-        cell.alarmDay.text = String(repeatdays.prefix(repeatdays.count - 2))
-        cell.alarmLabel.text = alarmItem.label
+        cell.alarmTime.text = alarmItem //timeformat.string(from: Date())
+//        cell.alarmDay.text = String(repeatdays.prefix(repeatdays.count - 2))
+//        cell.alarmLabel.text = alarmItem.label
         
         tableView.rowHeight = 110
+        
+        cell.selectionStyle = .none
 
         return cell
     }
@@ -103,7 +135,8 @@ class SettingAlarmTableViewController: UITableViewController {
         let deleteAction = UIContextualAction(style: .destructive, title: "Delete") {  (contextualAction, view, boolValue) in
             //Code I want to do here
             
-            self.alarms.remove(at: indexPath.row)
+            self.alarmArray.remove(at: indexPath.row)
+//            self.alarms.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
         
