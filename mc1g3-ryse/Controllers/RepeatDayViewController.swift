@@ -26,6 +26,8 @@ class RepeatDayViewController: UIViewController, UITableViewDataSource, UITableV
                  Day(dd: "Saturday")
     ]
     
+    var repeatDay : [Int] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -56,6 +58,28 @@ class RepeatDayViewController: UIViewController, UITableViewDataSource, UITableV
         
         
         days[indexPath.row].selected = !days[indexPath.row].selected
+        
+        if days[indexPath.row].selected {
+            
+            
+            
+            if !repeatDay.contains(indexPath.row){
+                repeatDay.append(indexPath.row)
+            }
+            else {
+                repeatDay = repeatDay.filter{$0 != indexPath.row}
+            }
+            
+        } else {
+            
+            if repeatDay.count != 0 {
+//                repeatDay.remove(at: indexPath.row)
+                repeatDay = repeatDay.filter{$0 != indexPath.row}
+            }
+            
+        }
+        
+        print(repeatDay)
         
         tableView.reloadData()
         
