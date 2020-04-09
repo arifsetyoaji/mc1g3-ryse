@@ -24,24 +24,6 @@
 		BF405C5A2436F992004EE3E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF405C582436F992004EE3E2 /* Main.storyboard */; };
 		BF405C5C2436F993004EE3E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF405C5B2436F993004EE3E2 /* Assets.xcassets */; };
 		BF405C5F2436F993004EE3E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF405C5D2436F993004EE3E2 /* LaunchScreen.storyboard */; };
-		CE1DC306243DC4E800F21457 /* SF-Pro-Text-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE1DC2F4243DC4E700F21457 /* SF-Pro-Text-Ultralight.otf */; };
-		CE1DC307243DC4E800F21457 /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE1DC2F5243DC4E700F21457 /* SF-Pro-Text-Bold.otf */; };
-		CE1DC308243DC4E800F21457 /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE1DC2F6243DC4E700F21457 /* SF-Pro-Text-Regular.otf */; };
-		CE1DC309243DC4E800F21457 /* SF-Pro-Text-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE1DC2F7243DC4E700F21457 /* SF-Pro-Text-ThinItalic.otf */; };
-		CE1DC30A243DC4E800F21457 /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE1DC2F8243DC4E700F21457 /* SF-Pro-Text-Medium.otf */; };
-		CE1DC30B243DC4E800F21457 /* SF-Pro-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE1DC2F9243DC4E700F21457 /* SF-Pro-Text-Light.otf */; };
-		CE1DC30C243DC4E800F21457 /* SF-Pro-Text-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE1DC2FA243DC4E700F21457 /* SF-Pro-Text-HeavyItalic.otf */; };
-		CE1DC30D243DC4E800F21457 /* SF-Pro-Text-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE1DC2FB243DC4E700F21457 /* SF-Pro-Text-Thin.otf */; };
-		CE1DC30E243DC4E800F21457 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE1DC2FC243DC4E700F21457 /* SF-Pro-Text-Semibold.otf */; };
-		CE1DC30F243DC4E800F21457 /* SF-Pro-Text-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE1DC2FD243DC4E800F21457 /* SF-Pro-Text-Black.otf */; };
-		CE1DC310243DC4E800F21457 /* SF-Pro-Text-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE1DC2FE243DC4E800F21457 /* SF-Pro-Text-MediumItalic.otf */; };
-		CE1DC311243DC4E800F21457 /* SF-Pro-Text-UltralightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE1DC2FF243DC4E800F21457 /* SF-Pro-Text-UltralightItalic.otf */; };
-		CE1DC312243DC4E800F21457 /* SF-Pro-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE1DC300243DC4E800F21457 /* SF-Pro-Text-Heavy.otf */; };
-		CE1DC313243DC4E800F21457 /* SF-Pro-Text-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE1DC301243DC4E800F21457 /* SF-Pro-Text-RegularItalic.otf */; };
-		CE1DC314243DC4E800F21457 /* SF-Pro-Text-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE1DC302243DC4E800F21457 /* SF-Pro-Text-BlackItalic.otf */; };
-		CE1DC315243DC4E800F21457 /* SF-Pro-Text-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE1DC303243DC4E800F21457 /* SF-Pro-Text-BoldItalic.otf */; };
-		CE1DC316243DC4E800F21457 /* SF-Pro-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE1DC304243DC4E800F21457 /* SF-Pro-Text-SemiboldItalic.otf */; };
-		CE1DC317243DC4E800F21457 /* SF-Pro-Text-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE1DC305243DC4E800F21457 /* SF-Pro-Text-LightItalic.otf */; };
 		CE39A864243C6C1A00BEAE74 /* BusySignal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE39A851243C6C1A00BEAE74 /* BusySignal.mp3 */; };
 		CE39A865243C6C1A00BEAE74 /* TempleBellBigger.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE39A852243C6C1A00BEAE74 /* TempleBellBigger.mp3 */; };
 		CE39A866243C6C1A00BEAE74 /* TornadoSiren2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE39A853243C6C1A00BEAE74 /* TornadoSiren2.mp3 */; };
@@ -88,24 +70,6 @@
 		BF405C5B2436F993004EE3E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF405C5E2436F993004EE3E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF405C602436F993004EE3E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE1DC2F4243DC4E700F21457 /* SF-Pro-Text-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Ultralight.otf"; sourceTree = "<group>"; };
-		CE1DC2F5243DC4E700F21457 /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
-		CE1DC2F6243DC4E700F21457 /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
-		CE1DC2F7243DC4E700F21457 /* SF-Pro-Text-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-ThinItalic.otf"; sourceTree = "<group>"; };
-		CE1DC2F8243DC4E700F21457 /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
-		CE1DC2F9243DC4E700F21457 /* SF-Pro-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Light.otf"; sourceTree = "<group>"; };
-		CE1DC2FA243DC4E700F21457 /* SF-Pro-Text-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-HeavyItalic.otf"; sourceTree = "<group>"; };
-		CE1DC2FB243DC4E700F21457 /* SF-Pro-Text-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Thin.otf"; sourceTree = "<group>"; };
-		CE1DC2FC243DC4E700F21457 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
-		CE1DC2FD243DC4E800F21457 /* SF-Pro-Text-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Black.otf"; sourceTree = "<group>"; };
-		CE1DC2FE243DC4E800F21457 /* SF-Pro-Text-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-MediumItalic.otf"; sourceTree = "<group>"; };
-		CE1DC2FF243DC4E800F21457 /* SF-Pro-Text-UltralightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-UltralightItalic.otf"; sourceTree = "<group>"; };
-		CE1DC300243DC4E800F21457 /* SF-Pro-Text-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Heavy.otf"; sourceTree = "<group>"; };
-		CE1DC301243DC4E800F21457 /* SF-Pro-Text-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-RegularItalic.otf"; sourceTree = "<group>"; };
-		CE1DC302243DC4E800F21457 /* SF-Pro-Text-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-BlackItalic.otf"; sourceTree = "<group>"; };
-		CE1DC303243DC4E800F21457 /* SF-Pro-Text-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-BoldItalic.otf"; sourceTree = "<group>"; };
-		CE1DC304243DC4E800F21457 /* SF-Pro-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
-		CE1DC305243DC4E800F21457 /* SF-Pro-Text-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-LightItalic.otf"; sourceTree = "<group>"; };
 		CE39A851243C6C1A00BEAE74 /* BusySignal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BusySignal.mp3; sourceTree = "<group>"; };
 		CE39A852243C6C1A00BEAE74 /* TempleBellBigger.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TempleBellBigger.mp3; sourceTree = "<group>"; };
 		CE39A853243C6C1A00BEAE74 /* TornadoSiren2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TornadoSiren2.mp3; sourceTree = "<group>"; };
@@ -191,36 +155,10 @@
 				83B54066243C2AF600049C41 /* Challenge.storyboard */,
 				BF405C5D2436F993004EE3E2 /* LaunchScreen.storyboard */,
 				BF405C5B2436F993004EE3E2 /* Assets.xcassets */,
-				CE1DC318243DC4FB00F21457 /* Fonts */,
 				CE39A850243C6C1A00BEAE74 /* sound */,
 				BF405C602436F993004EE3E2 /* Info.plist */,
 			);
 			path = "mc1g3-ryse";
-			sourceTree = "<group>";
-		};
-		CE1DC318243DC4FB00F21457 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				CE1DC2FD243DC4E800F21457 /* SF-Pro-Text-Black.otf */,
-				CE1DC302243DC4E800F21457 /* SF-Pro-Text-BlackItalic.otf */,
-				CE1DC2F5243DC4E700F21457 /* SF-Pro-Text-Bold.otf */,
-				CE1DC303243DC4E800F21457 /* SF-Pro-Text-BoldItalic.otf */,
-				CE1DC300243DC4E800F21457 /* SF-Pro-Text-Heavy.otf */,
-				CE1DC2FA243DC4E700F21457 /* SF-Pro-Text-HeavyItalic.otf */,
-				CE1DC2F9243DC4E700F21457 /* SF-Pro-Text-Light.otf */,
-				CE1DC305243DC4E800F21457 /* SF-Pro-Text-LightItalic.otf */,
-				CE1DC2F8243DC4E700F21457 /* SF-Pro-Text-Medium.otf */,
-				CE1DC2FE243DC4E800F21457 /* SF-Pro-Text-MediumItalic.otf */,
-				CE1DC2F6243DC4E700F21457 /* SF-Pro-Text-Regular.otf */,
-				CE1DC301243DC4E800F21457 /* SF-Pro-Text-RegularItalic.otf */,
-				CE1DC2FC243DC4E700F21457 /* SF-Pro-Text-Semibold.otf */,
-				CE1DC304243DC4E800F21457 /* SF-Pro-Text-SemiboldItalic.otf */,
-				CE1DC2FB243DC4E700F21457 /* SF-Pro-Text-Thin.otf */,
-				CE1DC2F7243DC4E700F21457 /* SF-Pro-Text-ThinItalic.otf */,
-				CE1DC2F4243DC4E700F21457 /* SF-Pro-Text-Ultralight.otf */,
-				CE1DC2FF243DC4E800F21457 /* SF-Pro-Text-UltralightItalic.otf */,
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 		CE39A850243C6C1A00BEAE74 /* sound */ = {
@@ -329,41 +267,24 @@
 				CE39A865243C6C1A00BEAE74 /* TempleBellBigger.mp3 in Resources */,
 				CE39A868243C6C1A00BEAE74 /* Bleep.mp3 in Resources */,
 				CE39A866243C6C1A00BEAE74 /* TornadoSiren2.mp3 in Resources */,
-				CE1DC30A243DC4E800F21457 /* SF-Pro-Text-Medium.otf in Resources */,
 				83B5413C243DBDF200049C41 /* AddAlarm.storyboard in Resources */,
 				CE39A878243C6E4700BEAE74 /* AnalogWatchAlarm.mp3 in Resources */,
 				CE39A867243C6C1A00BEAE74 /* BombSiren.mp3 in Resources */,
-				CE1DC312243DC4E800F21457 /* SF-Pro-Text-Heavy.otf in Resources */,
-				CE1DC316243DC4E800F21457 /* SF-Pro-Text-SemiboldItalic.otf in Resources */,
-				CE1DC308243DC4E800F21457 /* SF-Pro-Text-Regular.otf in Resources */,
-				CE1DC317243DC4E800F21457 /* SF-Pro-Text-LightItalic.otf in Resources */,
 				CE39A873243C6C1A00BEAE74 /* JapaneseTempleBellSmall.mp3 in Resources */,
-				CE1DC311243DC4E800F21457 /* SF-Pro-Text-UltralightItalic.otf in Resources */,
-				CE1DC307243DC4E800F21457 /* SF-Pro-Text-Bold.otf in Resources */,
 				83B54067243C2AF600049C41 /* Challenge.storyboard in Resources */,
-				CE1DC315243DC4E800F21457 /* SF-Pro-Text-BoldItalic.otf in Resources */,
-				CE1DC313243DC4E800F21457 /* SF-Pro-Text-RegularItalic.otf in Resources */,
-				CE1DC30B243DC4E800F21457 /* SF-Pro-Text-Light.otf in Resources */,
 				CE39A86F243C6C1A00BEAE74 /* LoudAlarmClockBuzzer.mp3 in Resources */,
 				CE39A864243C6C1A00BEAE74 /* BusySignal.mp3 in Resources */,
 				CE39A86C243C6C1A00BEAE74 /* Metronome.mp3 in Resources */,
 				83B5413E243DC2CE00049C41 /* AlarmLabel.storyboard in Resources */,
 				CE39A870243C6C1A00BEAE74 /* ZombieDemonSpawn.mp3 in Resources */,
 				CE39A872243C6C1A00BEAE74 /* Rooster.mp3 in Resources */,
-				CE1DC309243DC4E800F21457 /* SF-Pro-Text-ThinItalic.otf in Resources */,
 				CE39A875243C6C1A00BEAE74 /* StoreDoor.mp3 in Resources */,
 				BF405C5F2436F993004EE3E2 /* LaunchScreen.storyboard in Resources */,
-				CE1DC310243DC4E800F21457 /* SF-Pro-Text-MediumItalic.otf in Resources */,
 				CE39A86A243C6C1A00BEAE74 /* Siren.mp3 in Resources */,
 				83B54065243C2AEA00049C41 /* SettingAlarm.storyboard in Resources */,
 				CE39A874243C6C1A00BEAE74 /* MetalMetronome.mp3 in Resources */,
-				CE1DC314243DC4E800F21457 /* SF-Pro-Text-BlackItalic.otf in Resources */,
 				CE39A87A243C6E5B00BEAE74 /* Beep.mp3 in Resources */,
-				CE1DC30F243DC4E800F21457 /* SF-Pro-Text-Black.otf in Resources */,
-				CE1DC30E243DC4E800F21457 /* SF-Pro-Text-Semibold.otf in Resources */,
-				CE1DC306243DC4E800F21457 /* SF-Pro-Text-Ultralight.otf in Resources */,
 				CE39A876243C6C1A00BEAE74 /* AnnoyingAlarmClock.mp3 in Resources */,
-				CE1DC30D243DC4E800F21457 /* SF-Pro-Text-Thin.otf in Resources */,
 				BF405C5C2436F993004EE3E2 /* Assets.xcassets in Resources */,
 				CE39A869243C6C1A00BEAE74 /* Horn.mp3 in Resources */,
 				83B54142243DC98200049C41 /* RepeatDay.storyboard in Resources */,
@@ -372,7 +293,6 @@
 				CE39A86D243C6C1A00BEAE74 /* ShipBrassBell.mp3 in Resources */,
 				BF405C5A2436F992004EE3E2 /* Main.storyboard in Resources */,
 				83B540B0243C30CF00049C41 /* Sound.storyboard in Resources */,
-				CE1DC30C243DC4E800F21457 /* SF-Pro-Text-HeavyItalic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
