@@ -47,6 +47,8 @@
 		CE39A878243C6E4700BEAE74 /* AnalogWatchAlarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE39A877243C6E4700BEAE74 /* AnalogWatchAlarm.mp3 */; };
 		CE39A87A243C6E5B00BEAE74 /* Beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE39A879243C6E5B00BEAE74 /* Beep.mp3 */; };
 		CE6A141924372710000F1407 /* SoundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A141824372710000F1407 /* SoundController.swift */; };
+		CE7D20FB2440D23D00C3B2CD /* Onboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7D20FA2440D23D00C3B2CD /* Onboard.storyboard */; };
+		CE7D20FD2440D27C00C3B2CD /* OnboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D20FC2440D27C00C3B2CD /* OnboardVC.swift */; };
 		CE88D88C243C36FF00F8F19B /* SoundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88D88B243C36FF00F8F19B /* SoundModel.swift */; };
 		CE88D890243C637300F8F19B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE88D88E243C57AF00F8F19B /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
@@ -94,6 +96,8 @@
 		CE39A877243C6E4700BEAE74 /* AnalogWatchAlarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AnalogWatchAlarm.mp3; sourceTree = "<group>"; };
 		CE39A879243C6E5B00BEAE74 /* Beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Beep.mp3; sourceTree = "<group>"; };
 		CE6A141824372710000F1407 /* SoundController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundController.swift; sourceTree = "<group>"; };
+		CE7D20FA2440D23D00C3B2CD /* Onboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboard.storyboard; sourceTree = "<group>"; };
+		CE7D20FC2440D27C00C3B2CD /* OnboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardVC.swift; sourceTree = "<group>"; };
 		CE88D88B243C36FF00F8F19B /* SoundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundModel.swift; sourceTree = "<group>"; };
 		CE88D88E243C57AF00F8F19B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -120,6 +124,7 @@
 				83B54145243DCEBB00049C41 /* RepeatDayViewController.swift */,
 				83B54147243DD1D500049C41 /* AlarmLabelViewController.swift */,
 				CE6A141824372710000F1407 /* SoundController.swift */,
+				CE7D20FC2440D27C00C3B2CD /* OnboardVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 				83B5413D243DC2CE00049C41 /* AlarmLabel.storyboard */,
 				83B540AF243C30CF00049C41 /* Sound.storyboard */,
 				83B54066243C2AF600049C41 /* Challenge.storyboard */,
+				CE7D20FA2440D23D00C3B2CD /* Onboard.storyboard */,
 				BF405C5B2436F993004EE3E2 /* Assets.xcassets */,
 				BF405C5D2436F993004EE3E2 /* LaunchScreen.storyboard */,
 				CE39A850243C6C1A00BEAE74 /* sound */,
@@ -274,6 +280,7 @@
 				CE39A878243C6E4700BEAE74 /* AnalogWatchAlarm.mp3 in Resources */,
 				CE39A867243C6C1A00BEAE74 /* BombSiren.mp3 in Resources */,
 				CE39A873243C6C1A00BEAE74 /* JapaneseTempleBellSmall.mp3 in Resources */,
+				CE7D20FB2440D23D00C3B2CD /* Onboard.storyboard in Resources */,
 				83B54067243C2AF600049C41 /* Challenge.storyboard in Resources */,
 				CE39A86F243C6C1A00BEAE74 /* LoudAlarmClockBuzzer.mp3 in Resources */,
 				CE39A864243C6C1A00BEAE74 /* BusySignal.mp3 in Resources */,
@@ -310,6 +317,7 @@
 				BF405C572436F992004EE3E2 /* MainViewController.swift in Sources */,
 				83B5414E243DD67900049C41 /* SettingAlarmTableViewController.swift in Sources */,
 				CE6A141924372710000F1407 /* SoundController.swift in Sources */,
+				CE7D20FD2440D27C00C3B2CD /* OnboardVC.swift in Sources */,
 				83B54148243DD1D500049C41 /* AlarmLabelViewController.swift in Sources */,
 				CE88D88C243C36FF00F8F19B /* SoundModel.swift in Sources */,
 				83B5414A243DD4D600049C41 /* AlarmViewCell.swift in Sources */,

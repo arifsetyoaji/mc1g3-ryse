@@ -181,18 +181,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="l5d-kH-uGp">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="cPN-6g-UiH">
-                            <button key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mAE-4r-yUg">
-                                <rect key="frame" x="247" y="99" width="44" height="44"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="t35-i7-shF">
+                            <button key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yn6-7x-sRE">
+                                <rect key="frame" x="350" y="0.0" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.59999999999999998" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="tintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <state key="normal" image="chevron.right" catalog="system">
-                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="HYq-g8-dcg" kind="push" id="Bup-0x-fS3"/>
+                                    <segue destination="HYq-g8-dcg" kind="push" id="cH7-vX-P3V"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -201,7 +201,7 @@
                         <outlet property="factsByLabel" destination="gua-n0-K2d" id="WwL-9D-F3M"/>
                         <outlet property="factsLabel" destination="gWp-i3-3Xe" id="gXU-zY-QlF"/>
                         <outlet property="nextAlarmLabel" destination="tgr-Gv-Tq1" id="Xke-vj-7M8"/>
-                        <outlet property="settingButton" destination="mAE-4r-yUg" id="wGy-IM-Bti"/>
+                        <outlet property="settingButton" destination="yn6-7x-sRE" id="Pys-4L-f58"/>
                         <outletCollection property="dayLabels" destination="pnO-Rc-IFq" collectionClass="NSMutableArray" id="dvZ-Ec-D94"/>
                         <outletCollection property="dayLabels" destination="XPY-0y-3DY" collectionClass="NSMutableArray" id="uVv-pf-pkd"/>
                         <outletCollection property="dayLabels" destination="6i3-f4-rZu" collectionClass="NSMutableArray" id="ilQ-V3-6QW"/>
@@ -213,7 +213,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="235" y="-956"/>
+            <point key="canvasLocation" x="252" y="-956"/>
         </scene>
         <!--SettingAlarm-->
         <scene sceneID="ys8-iq-N9U">
@@ -223,7 +223,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DvJ-Td-gIC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="705.79710144927537" y="-989.0625"/>
+            <point key="canvasLocation" x="839" y="-956"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YJm-Tn-sfa">
@@ -242,7 +242,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U5M-Ds-if2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-603" y="-956"/>
+            <point key="canvasLocation" x="-551" y="-956"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.93725490199999995" green="0.59999999999999998" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
