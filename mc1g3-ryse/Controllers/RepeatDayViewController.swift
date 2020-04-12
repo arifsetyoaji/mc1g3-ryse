@@ -27,6 +27,7 @@ class RepeatDayViewController: UIViewController, UITableViewDataSource, UITableV
     ]
     
     var repeatDay : [Int] = []
+    var teshari: [DayAlarm] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -84,14 +85,40 @@ class RepeatDayViewController: UIViewController, UITableViewDataSource, UITableV
         
     }
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if repeatDay.contains(0){
+            teshari.append(.sunday)
+        }
+        if repeatDay.contains(1){
+            teshari.append(.monday)
+        }
+        if repeatDay.contains(2){
+            teshari.append(.tuesday)
+        }
+        if repeatDay.contains(3){
+            teshari.append(.wednesday)
+        }
+        if repeatDay.contains(4){
+           teshari.append(.thursday)
+        }
+        if repeatDay.contains(5){
+            teshari.append(.friday)
+        }
+        if repeatDay.contains(6){
+           teshari.append(.saturday)
+        }
+
+        print(teshari)
+            let dest = segue.destination as! AddAlarmViewController
+            dest.terimahari = teshari
+                  
+            print("segue jalan")
     }
-    */
+    
 
 }

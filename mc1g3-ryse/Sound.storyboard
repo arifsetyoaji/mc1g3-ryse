@@ -29,11 +29,18 @@
                             <outlet property="delegate" destination="MZh-2L-Vpb" id="m2D-Dd-76m"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Sound" id="fLH-7L-hwE"/>
+                    <navigationItem key="navigationItem" title="Sound" id="fLH-7L-hwE">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="euM-Ea-nOP">
+                            <connections>
+                                <segue destination="Wx6-3H-e3y" kind="unwind" unwindAction="unwindAddSound:" id="Bp1-75-6zr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K8z-qd-Kqs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Wx6-3H-e3y" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-642.02898550724638" y="-506.25"/>
+            <point key="canvasLocation" x="268.1159420289855" y="-506.25"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.93725490199999995" green="0.59999999999999998" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

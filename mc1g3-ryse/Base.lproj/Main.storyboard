@@ -192,7 +192,7 @@
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="HYq-g8-dcg" kind="push" id="cH7-vX-P3V"/>
+                                    <segue destination="HYq-g8-dcg" kind="show" id="cH7-vX-P3V"/>
                                 </connections>
                             </button>
                         </barButtonItem>

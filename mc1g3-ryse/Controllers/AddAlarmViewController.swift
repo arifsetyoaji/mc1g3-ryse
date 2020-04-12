@@ -16,10 +16,14 @@ class AddAlarmViewController: UIViewController, UITableViewDataSource, UITableVi
     @IBOutlet weak var timePicker: UIDatePicker!
     @IBOutlet weak var settingAlarmTableView: UITableView!
     
+    var labelAlarm = ""
     var alarmTimePicked = Date()
+    var terimahari: [DayAlarm] = []
+    var selectedSound = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         timePicking()
 
@@ -87,5 +91,26 @@ class AddAlarmViewController: UIViewController, UITableViewDataSource, UITableVi
         dismiss(animated: true, completion: nil)
     }
     
-
+    @IBAction func unwindAddAlarm(_ sender: UIStoryboardSegue) {
+        
+         //Use data from the view controller which initiated the unwind segue
+        if let addLabelViewController = sender.source as? AlarmLabelViewController{
+          labelAlarm = addLabelViewController.labelAlarm
+        }
+        print(labelAlarm)
+    }
+    
+    @IBAction func unwindAddDays(_ sender: UIStoryboardSegue) {
+        if let repeatVC = sender.source as? RepeatDayViewController{
+            terimahari = repeatVC.teshari
+        }
+        print(terimahari)
+    }
+    
+    @IBAction func unwindAddSound(_ sender: UIStoryboardSegue) {
+        if let soundVC = sender.source as? SoundController{
+            selectedSound = soundVC.selectedSound
+        }
+        print(selectedSound)
+    }
 }

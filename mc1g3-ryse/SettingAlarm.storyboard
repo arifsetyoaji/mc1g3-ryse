@@ -68,7 +68,7 @@
                     <navigationItem key="navigationItem" title="Setting Alarm" id="v8d-gP-3N1">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="1jh-iP-quj">
                             <connections>
-                                <segue destination="dYl-IR-yVt" kind="presentation" id="3lP-n5-YLW"/>
+                                <segue destination="dYl-IR-yVt" kind="show" id="3lP-n5-YLW"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -80,7 +80,9 @@
         <!--AddAlarm-->
         <scene sceneID="eb5-xO-lwg">
             <objects>
-                <viewControllerPlaceholder storyboardName="AddAlarm" id="dYl-IR-yVt" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="AddAlarm" id="dYl-IR-yVt" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="CZA-SQ-BCX"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rTT-We-ZKV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3200" y="-57"/>

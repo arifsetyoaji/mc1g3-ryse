@@ -25,14 +25,21 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="TEX-yc-Rmu"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Label" id="VtI-GM-zuP"/>
+                    <navigationItem key="navigationItem" title="Label" id="VtI-GM-zuP">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="1F5-7H-bBP">
+                            <connections>
+                                <segue destination="fBz-ot-3wg" kind="unwind" unwindAction="unwindAddAlarm:" id="06O-B6-XeC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="alarmLabelTextField" destination="wN1-wb-2yx" id="Fc6-bb-IMw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tsv-72-tNh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="fBz-ot-3wg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="106" y="313"/>
+            <point key="canvasLocation" x="1015.9420289855074" y="312.72321428571428"/>
         </scene>
     </scenes>
 </document>

@@ -34,14 +34,21 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="aWp-fY-ACk"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Repeat" id="jEU-7y-Hjy"/>
+                    <navigationItem key="navigationItem" title="Repeat" id="jEU-7y-Hjy">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="6fI-Px-xzc">
+                            <connections>
+                                <segue destination="1Md-z4-Zav" kind="unwind" unwindAction="unwindAddDays:" id="0hz-Q0-iIh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="repeatDaysTableView" destination="Cje-H3-f2I" id="klW-ZB-ukt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ghq-86-Y27" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="1Md-z4-Zav" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="992.75362318840587" y="75"/>
+            <point key="canvasLocation" x="1902.8985507246377" y="75"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.93725490199999995" green="0.59999999999999998" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
