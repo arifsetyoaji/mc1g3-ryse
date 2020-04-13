@@ -68,7 +68,7 @@
                     <navigationItem key="navigationItem" title="Setting Alarm" id="v8d-gP-3N1">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="1jh-iP-quj">
                             <connections>
-                                <segue destination="dYl-IR-yVt" kind="modal" id="3lP-n5-YLW"/>
+                                <segue destination="dYl-IR-yVt" kind="presentation" id="3lP-n5-YLW"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
