@@ -10,7 +10,7 @@
         <!--Repeat-->
         <scene sceneID="BqN-TA-yZ4">
             <objects>
-                <viewController id="ayX-iK-tXV" customClass="RepeatDayViewController" customModule="mc1g3_ryse" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ayX-iK-tXV" customClass="RepeatDayViewController" customModule="ryse_playground_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AnE-Bh-5es">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,10 +34,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="aWp-fY-ACk"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Repeat" id="jEU-7y-Hjy">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="6fI-Px-xzc">
+                    <navigationItem key="navigationItem" title="Repeat" id="Cs2-KF-zsE">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="done" id="1KT-KK-bD1">
                             <connections>
-                                <segue destination="1Md-z4-Zav" kind="unwind" unwindAction="unwindAddDays:" id="0hz-Q0-iIh"/>
+                                <segue destination="XNR-Tu-Zjb" kind="unwind" unwindAction="unwindAfterSettingAlarmWithSender:" id="svZ-Up-g1M"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -46,9 +46,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ghq-86-Y27" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="1Md-z4-Zav" userLabel="Exit" sceneMemberID="exit"/>
+                <exit id="XNR-Tu-Zjb" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1902.8985507246377" y="75"/>
+            <point key="canvasLocation" x="2916" y="-143"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.93725490199999995" green="0.59999999999999998" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

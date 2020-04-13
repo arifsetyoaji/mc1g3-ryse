@@ -16,14 +16,16 @@ class AddAlarmViewController: UIViewController, UITableViewDataSource, UITableVi
     @IBOutlet weak var timePicker: UIDatePicker!
     @IBOutlet weak var settingAlarmTableView: UITableView!
     
-    var labelAlarm = ""
     var alarmTimePicked = Date()
-    var terimahari: [DayAlarm] = []
-    var selectedSound = ""
+    
+    var labelAdded: String = ""
+    var toneAdded: String = ""
+    var dayAdded: [DayAlarm] = []
+    
+//    var dayArray = DayData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         timePicking()
 
@@ -46,13 +48,32 @@ class AddAlarmViewController: UIViewController, UITableViewDataSource, UITableVi
         
         let cell: UITableViewCell
         
+        var repeatdays: String = ""
+        
+        for x in dayAdded {
+            repeatdays.append(x.rawValue)
+            repeatdays.append(", ")
+        }
+        
         switch indexPath.row {
         case 0:
             cell = tableView.dequeueReusableCell(withIdentifier: "repeatCell", for: indexPath)
+            
+            if !repeatdays.isEmpty {
+                cell.detailTextLabel?.text = String(repeatdays.prefix(repeatdays.count - 2))
+            } else {
+                cell.detailTextLabel?.text = "Never"
+            }
+            //dayArray.array.joined(separator: ", ")
+            
         case 1:
             cell = tableView.dequeueReusableCell(withIdentifier: "labelCell", for: indexPath)
+            cell.detailTextLabel?.text = labelAdded
+            
         case 2:
             cell = tableView.dequeueReusableCell(withIdentifier: "toneCell", for: indexPath)
+            cell.detailTextLabel?.text = toneAdded
+            
         case 3:
             cell = tableView.dequeueReusableCell(withIdentifier: "ascendingVolumeCell", for: indexPath)
             cell.selectionStyle = .none
@@ -70,20 +91,19 @@ class AddAlarmViewController: UIViewController, UITableViewDataSource, UITableVi
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.destination is SettingAlarmTableViewController {
+//            //toPresent.alarmTime = timePicker.date
+//            print("prepare to present \(timePicker!)")
+//        }
         
-        if segue.destination is SettingAlarmTableViewController {
-            
-            //toPresent.alarmTime = timePicker.date
-            print("prepare to present \(timePicker.date)")
-        }
-        
+//        if let repeatDayVC = segue.source as? RepeatDayViewController {
+//            day = repeatDayVC.daySelected
+//        }
     }
     
     @IBAction func saveButtonPressed(_ sender: UIStoryboardSegue) {
         dismiss(animated: true, completion: nil)
-        print(alarmTimePicked)
     }
     
     
@@ -91,26 +111,24 @@ class AddAlarmViewController: UIViewController, UITableViewDataSource, UITableVi
         dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func unwindAddAlarm(_ sender: UIStoryboardSegue) {
+    
+    @IBAction func unwindAfterSettingAlarm(sender: UIStoryboardSegue){
         
-         //Use data from the view controller which initiated the unwind segue
-        if let addLabelViewController = sender.source as? AlarmLabelViewController{
-          labelAlarm = addLabelViewController.labelAlarm
+        if let repeatDayVC = sender.source as? RepeatDayViewController {
+            dayAdded = repeatDayVC.daySelected
+            print("segue source repeatday \(dayAdded)")
         }
-        print(labelAlarm)
-    }
-    
-    @IBAction func unwindAddDays(_ sender: UIStoryboardSegue) {
-        if let repeatVC = sender.source as? RepeatDayViewController{
-            terimahari = repeatVC.teshari
+        
+        if let toneVC = sender.source as? SoundController {
+            toneAdded = toneVC.selectSoundName!
+            print("selected tone \(toneAdded)")
         }
-        print(terimahari)
-    }
-    
-    @IBAction func unwindAddSound(_ sender: UIStoryboardSegue) {
-        if let soundVC = sender.source as? SoundController{
-            selectedSound = soundVC.selectedSound
+        
+        if let labelVC = sender.source as? AlarmLabelViewController {
+            labelAdded = labelVC.label
         }
-        print(selectedSound)
+        
+        settingAlarmTableView.reloadData()
     }
+
 }

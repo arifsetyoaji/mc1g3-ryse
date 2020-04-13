@@ -41,6 +41,8 @@ class SoundController: UITableViewController {
         SoundData(fileName: "Zombie Demon Spawn"),
     ]
     
+    var selectSoundName: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -87,13 +89,10 @@ class SoundController: UITableViewController {
         
         selectedIndexPath = indexPath
         
+        selectSoundName = file
+        
         tableView.reloadData()
         
-    }
-    
-    
-    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-       
     }
     
     func playSound(sound: String) {
@@ -109,20 +108,14 @@ class SoundController: UITableViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       let dest = segue.destination as! AddAlarmViewController
+       
+       selectedSound = soundList[selectedIndexPath!.row].fileName
+       dest.toneAdded = selectedSound
+       
+       print(selectedSound)
+    }
     
-
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let dest = segue.destination as! AddAlarmViewController
-        
-        selectedSound = soundList[selectedIndexPath!.row].fileName
-        dest.selectedSound = selectedSound
-        
-        print(selectedSound)
-     }
-
     
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		833321332444279E00D3BBF4 /* AlarmDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 833321312444279E00D3BBF4 /* AlarmDataModel.xcdatamodeld */; };
 		83B54065243C2AEA00049C41 /* SettingAlarm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B54064243C2AEA00049C41 /* SettingAlarm.storyboard */; };
 		83B54067243C2AF600049C41 /* Challenge.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B54066243C2AF600049C41 /* Challenge.storyboard */; };
 		83B540B0243C30CF00049C41 /* Sound.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B540AF243C30CF00049C41 /* Sound.storyboard */; };
@@ -54,6 +55,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		833321322444279E00D3BBF4 /* AlarmDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlarmDataModel.xcdatamodel; sourceTree = "<group>"; };
 		83B54064243C2AEA00049C41 /* SettingAlarm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingAlarm.storyboard; sourceTree = "<group>"; };
 		83B54066243C2AF600049C41 /* Challenge.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Challenge.storyboard; sourceTree = "<group>"; };
 		83B540AF243C30CF00049C41 /* Sound.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sound.storyboard; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				BF405C542436F992004EE3E2 /* SceneDelegate.swift */,
 				CE88D88A243C36E100F8F19B /* Models */,
 				83B5406C243C2D9700049C41 /* Controllers */,
+				CE7D20FA2440D23D00C3B2CD /* Onboard.storyboard */,
 				BF405C582436F992004EE3E2 /* Main.storyboard */,
 				83B54064243C2AEA00049C41 /* SettingAlarm.storyboard */,
 				83B5413B243DBDF200049C41 /* AddAlarm.storyboard */,
@@ -160,7 +163,6 @@
 				83B5413D243DC2CE00049C41 /* AlarmLabel.storyboard */,
 				83B540AF243C30CF00049C41 /* Sound.storyboard */,
 				83B54066243C2AF600049C41 /* Challenge.storyboard */,
-				CE7D20FA2440D23D00C3B2CD /* Onboard.storyboard */,
 				BF405C5B2436F993004EE3E2 /* Assets.xcassets */,
 				BF405C5D2436F993004EE3E2 /* LaunchScreen.storyboard */,
 				CE39A850243C6C1A00BEAE74 /* sound */,
@@ -202,6 +204,7 @@
 			children = (
 				CE88D88B243C36FF00F8F19B /* SoundModel.swift */,
 				ABEE0CB1243F600D00415D66 /* AlarmModel.swift */,
+				833321312444279E00D3BBF4 /* AlarmDataModel.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				CE6A141924372710000F1407 /* SoundController.swift in Sources */,
 				CE7D20FD2440D27C00C3B2CD /* OnboardVC.swift in Sources */,
 				83B54148243DD1D500049C41 /* AlarmLabelViewController.swift in Sources */,
+				833321332444279E00D3BBF4 /* AlarmDataModel.xcdatamodeld in Sources */,
 				CE88D88C243C36FF00F8F19B /* SoundModel.swift in Sources */,
 				83B5414A243DD4D600049C41 /* AlarmViewCell.swift in Sources */,
 				BF405C532436F992004EE3E2 /* AppDelegate.swift in Sources */,
@@ -520,6 +524,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		833321312444279E00D3BBF4 /* AlarmDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				833321322444279E00D3BBF4 /* AlarmDataModel.xcdatamodel */,
+			);
+			currentVersion = 833321322444279E00D3BBF4 /* AlarmDataModel.xcdatamodel */;
+			path = AlarmDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BF405C472436F992004EE3E2 /* Project object */;
 }

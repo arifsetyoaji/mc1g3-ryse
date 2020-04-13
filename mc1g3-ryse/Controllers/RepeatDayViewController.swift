@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RepeatDayViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class RepeatDayViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var repeatDaysTableView: UITableView!
     
@@ -16,7 +16,7 @@ class RepeatDayViewController: UIViewController, UITableViewDataSource, UITableV
         var dd: String
         var selected: Bool = false
     }
-    
+
     var days = [ Day(dd: "Sunday"),
                  Day(dd: "Monday"),
                  Day(dd: "Tuesday"),
@@ -26,17 +26,17 @@ class RepeatDayViewController: UIViewController, UITableViewDataSource, UITableV
                  Day(dd: "Saturday")
     ]
     
-    var repeatDay : [Int] = []
-    var teshari: [DayAlarm] = []
+    var repeatDayIndex : [Int] = []
+    var daySelected: [DayAlarm] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         
         self.repeatDaysTableView.delegate = self
         self.repeatDaysTableView.dataSource = self
         
+        self.navigationController?.delegate = self
+
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -61,64 +61,58 @@ class RepeatDayViewController: UIViewController, UITableViewDataSource, UITableV
         days[indexPath.row].selected = !days[indexPath.row].selected
         
         if days[indexPath.row].selected {
-            if !repeatDay.contains(indexPath.row){
-                repeatDay.append(indexPath.row)
+            if !repeatDayIndex.contains(indexPath.row){
+                repeatDayIndex.append(indexPath.row)
             }
             else {
-                repeatDay = repeatDay.filter{$0 != indexPath.row}
+                repeatDayIndex = repeatDayIndex.filter{$0 != indexPath.row}
             }
             
         } else {
-            if repeatDay.count != 0 {
+            if repeatDayIndex.count != 0 {
 //                repeatDay.remove(at: indexPath.row)
-                repeatDay = repeatDay.filter{$0 != indexPath.row}
+                repeatDayIndex = repeatDayIndex.filter{$0 != indexPath.row}
             }
             
         }
         
-        print(repeatDay)
-        
+        print("repeat day \(repeatDayIndex)")
         
         tableView.reloadData()
         
-        //tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
-        
     }
-
-    
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if repeatDay.contains(0){
-            teshari.append(.sunday)
+        if repeatDayIndex.contains(0){
+            daySelected.append(.sunday)
         }
-        if repeatDay.contains(1){
-            teshari.append(.monday)
+        if repeatDayIndex.contains(1){
+            daySelected.append(.monday)
         }
-        if repeatDay.contains(2){
-            teshari.append(.tuesday)
+        if repeatDayIndex.contains(2){
+            daySelected.append(.tuesday)
         }
-        if repeatDay.contains(3){
-            teshari.append(.wednesday)
+        if repeatDayIndex.contains(3){
+            daySelected.append(.wednesday)
         }
-        if repeatDay.contains(4){
-           teshari.append(.thursday)
+        if repeatDayIndex.contains(4){
+           daySelected.append(.thursday)
         }
-        if repeatDay.contains(5){
-            teshari.append(.friday)
+        if repeatDayIndex.contains(5){
+            daySelected.append(.friday)
         }
-        if repeatDay.contains(6){
-           teshari.append(.saturday)
+        if repeatDayIndex.contains(6){
+           daySelected.append(.saturday)
         }
 
-        print(teshari)
-            let dest = segue.destination as! AddAlarmViewController
-            dest.terimahari = teshari
+        print(daySelected)
+            
+        let dest = segue.destination as! AddAlarmViewController
+            dest.dayAdded = daySelected
                   
-            print("segue jalan")
+            print("segue jalan dari repeat days")
     }
     
-
+    
+    
 }

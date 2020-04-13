@@ -10,7 +10,7 @@
         <!--Label-->
         <scene sceneID="RD2-BH-BxK">
             <objects>
-                <viewController title="Label" id="VqB-o6-UQ7" customClass="AlarmLabelViewController" customModule="mc1g3_ryse" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Label" id="VqB-o6-UQ7" customClass="AlarmLabelViewController" customModule="ryse_playground_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OdA-dS-uUn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,9 +26,9 @@
                         <viewLayoutGuide key="safeArea" id="TEX-yc-Rmu"/>
                     </view>
                     <navigationItem key="navigationItem" title="Label" id="VtI-GM-zuP">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="1F5-7H-bBP">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="done" id="ZT3-X4-ctW">
                             <connections>
-                                <segue destination="fBz-ot-3wg" kind="unwind" unwindAction="unwindAddAlarm:" id="06O-B6-XeC"/>
+                                <segue destination="WN3-wE-aHa" kind="unwind" unwindAction="unwindAfterSettingAlarmWithSender:" id="uIU-GH-pAr"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -37,9 +37,10 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tsv-72-tNh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="fBz-ot-3wg" userLabel="Exit" sceneMemberID="exit"/>
+                <exit id="WN3-wE-aHa" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1015.9420289855074" y="312.72321428571428"/>
+            <point key="canvasLocation" x="-3" y="307"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.93725490199999995" green="0.59999999999999998" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

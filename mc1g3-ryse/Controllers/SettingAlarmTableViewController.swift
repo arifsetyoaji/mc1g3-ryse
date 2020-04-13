@@ -24,24 +24,13 @@ class SettingAlarmTableViewController: UITableViewController {
 //        Alarm(time: "06.10 AM", repeatday: "Sun, Mon, Tues", label: "Please Wake Me Up"),
 //    ]
     
-    var alarmTime: String = ""
+    var alarmArray: [Date] = []
     
-    var alarmArray: [String] = []
-    
-    var alarms = [
-        DataAlarm(time: Date(), repeatDay: [.sunday, .monday, .friday], label: "ini alarm saya", sound: "Horn", ascending: true),
-        DataAlarm(time: Date(), repeatDay: [.thursday, .saturday], label: "test", sound: "Horn", ascending: true)
-    ]
+    var alarms = [DataAlarm]()
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
     }
 
@@ -50,13 +39,14 @@ class SettingAlarmTableViewController: UITableViewController {
         if let present = sender.source as? AddAlarmViewController {
 
             let timePicked = present.timePicker.date
-            let timeformat = DateFormatter()
-            timeformat.dateFormat = "HH.mm"
+            let hari = present.dayAdded
+            let label = present.labelAdded
+            let tonePicked = present.toneAdded
             
-            alarmTime = timeformat.string(from: timePicked)
+            alarms.append(DataAlarm(time: timePicked, repeatDay: hari, label: label, sound: tonePicked, ascending: true))
             
-            alarmArray.append(alarmTime)
-            print("append alarm array \(alarmTime)")
+            print("append alarm array \(timePicked), \(hari), \(tonePicked)")
+
         }
         
         saveAlarm()
@@ -65,7 +55,7 @@ class SettingAlarmTableViewController: UITableViewController {
     
     func saveAlarm(){
         self.tableView.reloadData()
-        print(alarmArray)
+        print(alarms)
     }
     
     
@@ -79,7 +69,7 @@ class SettingAlarmTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return alarmArray.count //alarms.count
+        return alarms.count //alarms.count
     }
 
     
@@ -89,20 +79,26 @@ class SettingAlarmTableViewController: UITableViewController {
             fatalError("The dequeued cell is not an instance of SummaryTableViewCell.")
         }
         
-        let alarmItem = alarmArray[indexPath.row] //alarms[indexPath.row]
-//        let timeformat = DateFormatter()
-//        var repeatdays: String = ""
+        let alarmItem = alarms[indexPath.row] //alarms[indexPath.row]
+        let timeformat = DateFormatter()
+        timeformat.dateFormat = "HH.mm"
         
-//        timeformat.dateFormat = "HH.mm"
+        var repeatdays: String = ""
         
-//        for x in alarmItem.repeatDay {
-//            repeatdays.append(x.rawValue)
-//            repeatdays.append(", ")
-//        }
+        for x in alarmItem.repeatDay {
+            repeatdays.append(x?.rawValue ?? "")
+            repeatdays.append(", ")
+        }
         
-        cell.alarmTime.text = alarmItem //timeformat.string(from: Date())
-//        cell.alarmDay.text = String(repeatdays.prefix(repeatdays.count - 2))
-//        cell.alarmLabel.text = alarmItem.label
+        cell.alarmTime.text = timeformat.string(from: alarmItem.time)
+        
+        if !repeatdays.isEmpty {
+            cell.alarmDay.text = String(repeatdays.prefix(repeatdays.count - 2))
+        } else {
+            cell.alarmDay.text = "Just Once"
+        }
+        
+        cell.alarmLabel.text = alarmItem.label
         
         tableView.rowHeight = 110
         
@@ -135,11 +131,9 @@ class SettingAlarmTableViewController: UITableViewController {
         let deleteAction = UIContextualAction(style: .destructive, title: "Delete") {  (contextualAction, view, boolValue) in
             //Code I want to do here
             
-            self.alarmArray.remove(at: indexPath.row)
-//            self.alarms.remove(at: indexPath.row)
+            self.alarms.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
-        
         
         
         let swipeActions = UISwipeActionsConfiguration(actions: [deleteAction, editAction])
@@ -147,31 +141,5 @@ class SettingAlarmTableViewController: UITableViewController {
         return swipeActions
     }
     
-
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

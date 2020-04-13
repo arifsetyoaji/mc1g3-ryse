@@ -17,11 +17,12 @@ enum DayAlarm: String, CaseIterable {
     case friday = "Fri"
     case saturday = "Sat"
     case sunday = "Sun"
+    case never
 }
 
 struct DataAlarm {
     var time: Date
-    var repeatDay: [DayAlarm] = []
+    var repeatDay: [DayAlarm?] = []
     var label: String?
     var sound: String = ""
     var ascending: Bool = false

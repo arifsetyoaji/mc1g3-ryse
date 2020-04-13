@@ -9,7 +9,7 @@
         <!--Sound-->
         <scene sceneID="k87-ab-irs">
             <objects>
-                <tableViewController id="MZh-2L-Vpb" customClass="SoundController" customModule="mc1g3_ryse" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="MZh-2L-Vpb" customClass="SoundController" customModule="ryse_playground_2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Gw8-VM-K6Y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,15 +30,15 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Sound" id="fLH-7L-hwE">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="euM-Ea-nOP">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="done" id="InF-dF-oUO">
                             <connections>
-                                <segue destination="Wx6-3H-e3y" kind="unwind" unwindAction="unwindAddSound:" id="Bp1-75-6zr"/>
+                                <segue destination="ajx-mK-YL8" kind="unwind" unwindAction="unwindAfterSettingAlarmWithSender:" id="Lha-lq-kge"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K8z-qd-Kqs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="Wx6-3H-e3y" userLabel="Exit" sceneMemberID="exit"/>
+                <exit id="ajx-mK-YL8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="268.1159420289855" y="-506.25"/>
         </scene>

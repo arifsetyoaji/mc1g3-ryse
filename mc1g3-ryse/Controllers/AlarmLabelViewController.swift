@@ -10,31 +10,29 @@ import UIKit
 
 class AlarmLabelViewController: UIViewController {
 
-    var labelAlarm = ""
-    
     @IBOutlet weak var alarmLabelTextField: UITextField!
+    
+    var label: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    }
-    
-
-    
-    // MARK: - Navigation
-
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
-            let dest = segue.destination as! AddAlarmViewController
-            
-            labelAlarm = alarmLabelTextField.text ?? ""
-            
-            print("label Alarm: \(labelAlarm)")
-            dest.labelAlarm = labelAlarm
         
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(AlarmLabelViewController.viewTapped(gestureRecognizer:)))
+        
+        view.addGestureRecognizer(tapGesture)
     }
     
+
+    @objc func viewTapped(gestureRecognizer: UITapGestureRecognizer){
+        view.endEditing(true)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let newLabel = alarmLabelTextField.text {
+            label = newLabel
+        }
+    }
 
 }
