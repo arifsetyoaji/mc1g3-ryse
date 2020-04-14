@@ -6,32 +6,34 @@
 //  Copyright © 2020 Grace Cindy. All rights reserved.
 //
 
+import UserNotifications
 import UIKit
 
-class SettingAlarmTableViewController: UITableViewController {
-    
-    
-//    struct Alarm {
-//        var time: String
-//        var repeatday: String
-//        var label: String
-//    }
-//
-//
-//    var alarms = [
-//        Alarm(time: "06.00 AM", repeatday: "Sun, Mon, Tues", label: "Wake Me Up, when Sept .."),
-//        Alarm(time: "06.05 AM", repeatday: "Sun, Mon, Tues", label: "Wake Up !!!"),
-//        Alarm(time: "06.10 AM", repeatday: "Sun, Mon, Tues", label: "Please Wake Me Up"),
-//    ]
+class SettingAlarmTableViewController: UITableViewController, UNUserNotificationCenterDelegate {
     
     var alarmArray: [Date] = []
     
     var alarms = [DataAlarm]()
     
+    var notificationsArray = [NotificationModel]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        registerLocalNotification()
+    }
+    
+    
+    func registerLocalNotification(){
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .badge, .sound]) { granted,
+            Error in
+            if granted {
+                print("Yeay")
+            } else {
+                print("Oh no..")
+            }
+        }
     }
 
     @IBAction func unwindAddAlarm(sender: UIStoryboardSegue){
@@ -43,9 +45,26 @@ class SettingAlarmTableViewController: UITableViewController {
             let label = present.labelAdded
             let tonePicked = present.toneAdded
             
+            let jamFormat = DateFormatter()
+            jamFormat.dateFormat = "HH"
+            
+            let menitFormat = DateFormatter()
+            menitFormat.dateFormat = "mm"
+            
+            var dateComponents = DateComponents()
+            dateComponents.hour = Int(jamFormat.string(from: timePicked))
+            dateComponents.minute = Int(menitFormat.string(from: timePicked))
+                        
+            
+            
             alarms.append(DataAlarm(time: timePicked, repeatDay: hari, label: label, sound: tonePicked, ascending: true))
             
             print("append alarm array \(timePicked), \(hari), \(tonePicked)")
+            print("------------------------")
+            
+            notificationsArray.append(NotificationModel(title: label, soundName: tonePicked, datetime: dateComponents))
+            print("append datetime notif array \(dateComponents)")
+            print("soundName \(tonePicked)")
 
         }
         
@@ -55,7 +74,11 @@ class SettingAlarmTableViewController: UITableViewController {
     
     func saveAlarm(){
         self.tableView.reloadData()
-        print(alarms)
+        
+        self.scheduledNotification()
+//        self.listScheduledNotifications()
+        
+        print("Alarm Notif Data \(notificationsArray)")
     }
     
     
@@ -133,6 +156,8 @@ class SettingAlarmTableViewController: UITableViewController {
             
             self.alarms.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
+            
+            self.notificationsArray.remove(at: indexPath.row)
         }
         
         
@@ -142,4 +167,63 @@ class SettingAlarmTableViewController: UITableViewController {
     }
     
 
+}
+
+
+extension SettingAlarmTableViewController {
+    
+    func listScheduledNotifications(){
+        UNUserNotificationCenter.current().getPendingNotificationRequests {
+            
+            notificationsArray in
+            
+            for notification in notificationsArray {
+                print(notification)
+            }
+        }
+    }
+    
+    func scheduledNotification() {
+        
+        registerCategoryNotification()
+        
+        let center = UNUserNotificationCenter.current()
+        
+        for notification in notificationsArray {
+            let content = UNMutableNotificationContent()
+            content.title = notification.title
+            content.body = notification.title
+            content.categoryIdentifier = "alarm"
+            
+            let soundFile = notification.soundName
+            let soundName = soundFile.replacingOccurrences(of: " ", with: "", options: .literal, range: nil)
+            
+            print(soundName)
+            content.sound = UNNotificationSound(named: UNNotificationSoundName(rawValue: "\(soundName).mp3"))
+            
+            let trigger = UNCalendarNotificationTrigger(dateMatching: notification.datetime, repeats: false)
+//            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
+            
+            let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+            
+            center.add(request) { Error in
+                guard Error == nil else { return }
+            }
+            
+        }
+        
+    }
+    
+    func registerCategoryNotification(){
+        
+        let center = UNUserNotificationCenter.current()
+        center.delegate = self
+        
+        let snooze = UNNotificationAction(identifier: "show", title: "Open to Snooze Alarm", options: .foreground)
+        let category = UNNotificationCategory(identifier: "alarm", actions: [snooze], intentIdentifiers: [])
+        
+        center.setNotificationCategories([category])
+    }
+    
+    
 }

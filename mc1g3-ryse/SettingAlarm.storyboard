@@ -23,7 +23,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="23.59" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOb-Rb-hD2">
-                                            <rect key="frame" x="20" y="0.0" width="150" height="72"/>
+                                            <rect key="frame" x="20" y="0.0" width="206" height="72"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="60"/>
                                             <nil key="textColor"/>
@@ -67,6 +67,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Setting Alarm" id="v8d-gP-3N1">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="1jh-iP-quj">
+                            <color key="tintColor" red="0.93725490199999995" green="0.59999999999999998" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
                                 <segue destination="dYl-IR-yVt" kind="presentation" id="3lP-n5-YLW"/>
                             </connections>
@@ -75,7 +76,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RIV-6J-k1z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3444.9275362318845" y="99.776785714285708"/>
+            <point key="canvasLocation" x="5265.217391304348" y="99.776785714285708"/>
         </scene>
         <!--AddAlarm-->
         <scene sceneID="eb5-xO-lwg">
@@ -83,8 +84,8 @@
                 <viewControllerPlaceholder storyboardName="AddAlarm" id="dYl-IR-yVt" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rTT-We-ZKV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4110.144927536232" y="-57.589285714285708"/>
+            <point key="canvasLocation" x="5930.434782608696" y="-57.589285714285708"/>
         </scene>
     </scenes>
-    <color key="tintColor" red="0.93725490199999995" green="0.59999999999999998" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+    <color key="tintColor" red="0.93725490199999995" green="0.59999999999999998" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
 </document>
